@@ -1,38 +1,106 @@
+body{
+  background-color: rgb(233,110,69);
+}
+
 .App {
   text-align: center;
+  background-color: rgb(77,43,176);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Row-Header{
+  text-align: center;
+  background-color: rgb(52,29,120);
+  contain: content;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  place-content: center;
+
+}
+.Row-Header img{
+  position: relative;
+  width: 6vw;
+  height: 6vw;
+  
+}
+.Row-Header h2{
+  position: fixed;
   color: white;
+  font-size: 3vw;
+  left: 10vw;
+  top: -2vw;
 }
 
-.App-link {
-  color: #61dafb;
+.Row-Header h1{
+  position: fixed;
+  color: rgb(247,117,61);
+  font-size: 3vw;
+  right: 10vw;
+  top: -1.6vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Banner img{
+  width: 99vw;
+}
+/*text-shadow: #FC0 1px 0 10px;*/
+.Landing-Bottom {
+  display: flex;
+  justify-content: center;
+  background-position-y: 30%;
+  padding-bottom: 7%;
+}
+
+.Row {
+  display: flex;
+  padding-top: 3.5%;
+  padding-bottom: 4%;
+}
+.index-6-1{
+  align-items: center;
+  contain: content;
+  background-color: #141414e8;
+  margin-right: 1.4vw;
+  margin-left: 1.4vw;
+  contain: content;
+  border: 2px solid rgb(109, 109, 109);
+  border-radius: 3%;
+  width: 12.0vw;
+  height: 17.0vw;
+  
+}
+.index-6-1 img{
+  height: 17.5vw;
+  padding-left: 0;
+  /*align-items: center;*/
+
+  padding-bottom: 5px;
+}
+.index-6-1 h4 {
+  padding-top: 4.6vw;
+  text-align: center;
+  color:rgb(255, 255, 255);
+  font-size: 1.0vw;
+  font-weight: 600;
+  padding-left: 10px;
+  padding-right: 8px;
+  font-family:Tomorrow;
+}
+.index-6-1 p{
+  padding-top: 0.2vw;
+  text-align: center;
+  color:rgb(167, 167, 167);
+  font-size: 0.92vw;
+  padding-left: 10px;
+  padding-right: 8px;
+  font-family:Tomorrow;
+}
+
+.join-discord{
+  background-color: rgb(233,110,69);
+}
+.join-discord img{
+  width: 10vw;
+}
+.join-discord h1{
+  color:black;
+  margin-bottom: 10%;
+ /* color: rgb(52,29,120);*/
 }
