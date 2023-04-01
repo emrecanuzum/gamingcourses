@@ -1,10 +1,10 @@
 body{
-  background-color: rgb(233,110,69);
+  background-color: #f5733d
 }
 
 .App {
   text-align: center;
-  background-color: rgb(77,43,176);
+  background-color: #f5733d
 }
 
 .Row-Header{
@@ -36,15 +36,21 @@ body{
   right: 10vw;
   top: -1.6vw;
 }
-
+.Banner{
+  background-color: rgb(52,29,120);
+}
 .Banner img{
   width: 99vw;
+
 }
 /*text-shadow: #FC0 1px 0 10px;*/
 .Landing-Bottom {
   display: flex;
   justify-content: center;
   background-position-y: 30%;
+  background-size: contain;
+  height: auto;
+  margin-top: -2vw;
   padding-bottom: 7%;
 }
 
@@ -94,7 +100,7 @@ body{
 }
 
 .join-discord{
-  background-color: rgb(233,110,69);
+  background-color: #f5733d
 }
 .join-discord img{
   width: 10vw;
@@ -103,4 +109,37 @@ body{
   color:black;
   margin-bottom: 10%;
  /* color: rgb(52,29,120);*/
+}
+
+
+/* Flashing */
+.hover figure:hover img {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+figure{
+  margin-block-start: 0em;
+}
+
+.person img{
+  width: 10vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
