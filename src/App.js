@@ -9,7 +9,7 @@ import dc from './assets/dc.png';
 import dcDark from './assets/dcb.png';
 import bg from './assets/gradient.png';
 import persona from './assets/persona.jpg';
-import banner2 from './assets/banner2.png';
+import banner2 from './assets/banner4.png';
 
 import Carousel from "react-simply-carousel";
 import Aos from "aos";
@@ -66,81 +66,80 @@ function App() {
         </div>
       </div>
 
-      <div className='teachers'  data-aos="fade-up" style={{ backgroundImage:`url(${banner2})` }}>
-        <h1>TEACHERS</h1>
-        <h6>This could be you</h6>
+      <div className='teachers'  style={{ backgroundImage:`url(${banner2})`}}>
+        <h1  data-aos="fade-up">TEACHERS</h1>
+        <h6  data-aos="fade-up">This could be you</h6>
         <a href='-'>
-        <div className='t-button'>
+        <div className='t-button'  data-aos="fade-up">
           <p>START</p>
+          
         </div>
         </a>
-        
-        <div className='section-carousel' data-aos="fade-up">
-          <Carousel
-          activeSlideIndex={activeSlideIndex}
-          onRequestChange={setActiveSlideIndex}
-          itemsToShow={1}
-          itemsToScroll={1}
-          forwardBtnProps={{
-            //here you can also pass className, or any other button element attributes
-            style: {
-              alignSelf: 'center',
-              background: 'black',
-              border: 'none',
-              borderRadius: '50%',
-              color: 'orange',
-              cursor: 'pointer',
-              fontSize: '20px',
-              height: 30,
-              lineHeight: 1,
-              textAlign: 'center',
-              width: 30,
-            },
-            children: <span>{`>`}</span>
-          }}
-          backwardBtnProps={{
-            //here you can also pass className, or any other button element attributes
-            style: {
-              alignSelf: 'center',
-              background: 'black',
-              border: 'none',
-              borderRadius: '50%',
-              color: 'orange',
-              cursor: 'pointer',
-              fontSize: '20px',
-              height: 30,
-              lineHeight: 1,
-              textAlign: 'center',
-              width: 30,
-            },
-            children: <span>{`<`}</span>,
-          }}
-          responsiveProps={[
-            {
-              itemsToShow: 3,
-              itemsToScroll: 1,
-              minWidth: 100,
-            }
-          ]}
-          speed={400}
-          easing="linear">
-
-            <div className='person'>
-                <img src={persona} alt=""></img>
-            </div>
-            <div className='person'>
-                <img src={persona} alt=""></img>
-            </div>
-            <div className='person'>
-                <img src={persona} alt=""></img>
-            </div>
-            <div className='person'>
-                <img src={persona} alt=""></img>
-            </div>
-
-          </Carousel>
-        </div>
+      </div>  
+      <div className='section-carousel' data-aos="fade-up">
+        <Carousel
+        activeSlideIndex={activeSlideIndex}
+        onRequestChange={setActiveSlideIndex}
+        itemsToShow={1}
+        itemsToScroll={1}
+        forwardBtnProps={{
+          //here you can also pass className, or any other button element attributes
+          style: {
+            alignSelf: 'center',
+            background: 'black',
+            border: 'none',
+            borderRadius: '50%',
+            color: 'orange',
+            cursor: 'pointer',
+            fontSize: '20px',
+            height: 30,
+            lineHeight: 1,
+            textAlign: 'center',
+            width: 30,
+          },
+          children: <span>{`>`}</span>
+        }}
+        backwardBtnProps={{
+          //here you can also pass className, or any other button element attributes
+          style: {
+            alignSelf: 'center',
+            background: 'black',
+            border: 'none',
+            borderRadius: '50%',
+            color: 'orange',
+            cursor: 'pointer',
+            fontSize: '20px',
+            height: 30,
+            lineHeight: 1,
+            textAlign: 'center',
+            width: 30,
+          },
+          children: <span>{`<`}</span>,
+        }}
+        responsiveProps={[
+          {
+            itemsToShow: 3,
+            itemsToScroll: 1,
+            minWidth: 100,
+          }
+        ]}
+        speed={400}
+        easing="linear">
+          <div className='person'>
+              <img src={persona} alt=""></img>
+          </div>
+          <div className='person'>
+              <img src={persona} alt=""></img>
+          </div>
+          <div className='person'>
+              <img src={persona} alt=""></img>
+          </div>
+          <div className='person'>
+              <img src={persona} alt=""></img>
+          </div>
+        </Carousel>
       </div>
+      
     </div>
   );
 }

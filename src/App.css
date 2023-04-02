@@ -1,10 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
 body{
-  background-color: #f5733d
+  background-color: #45279e
 }
 
 .App {
   text-align: center;
-  background-color: #f5733d
+  background-color: #45279e
 }
 
 .Row-Header{
@@ -109,31 +112,37 @@ body{
 .join-discord h1{
   color:black;
   font-size: 2.5vw;
-  margin-bottom: 10%;
+  padding-bottom: 6%;
  /* color: rgb(52,29,120);*/
 }
 
 
 .teachers{
   margin-top: -5vw;
+  min-height: 34vw;
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: -webkit-center;
+  text-align: justify;
 }
 .teachers h1{
   color: white;
-  font-size: 3vw;
+  padding-top: 8vw;
+  margin-left: 10vw;
+  font-size: 6vw;
 }
 .teachers a{
   text-decoration:none;
+  
 }
 .teachers h6{
+  margin-left: 10.1vw;
   color: white;
   font-size: 1.25vw;
-  margin-top: -2vw;
+  margin-top: -4vw;
 }
 .t-button{
- 
+  text-align: center;
+  margin-left: 10vw;
   background-color: #f5733d;
   max-width: 10vw;
   border: 2px solid rgb(0, 0, 0);
@@ -145,7 +154,7 @@ body{
   font-weight: 700;
 }
 .section-carousel{
-  padding-top: 4vw;
+  padding-top: 0.5vw;
   padding-bottom: 3vw;
 }
 /* Flashing */
