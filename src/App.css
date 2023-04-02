@@ -2,12 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 body{
-  background-color: #45279e
+  background-color: #4729a4
 }
 
 .App {
   text-align: center;
-  background-color: #45279e
+  background-color: #4729a4
 }
 
 .Row-Header{
@@ -127,22 +127,21 @@ body{
 .teachers h1{
   color: white;
   padding-top: 8vw;
-  margin-left: 10vw;
+  margin-left: 5vw;
   font-size: 6vw;
 }
-.teachers a{
-  text-decoration:none;
-  
-}
+
 .teachers h6{
-  margin-left: 10.1vw;
+  margin-left: 5.1vw;
   color: white;
   font-size: 1.25vw;
   margin-top: -4vw;
 }
 .t-button{
+  box-shadow: 0px 0px 40px rgb(0, 0, 0);
   text-align: center;
-  margin-left: 10vw;
+  margin-top: -2.5vw;
+  margin-bottom: 2vw;
   background-color: #f5733d;
   max-width: 10vw;
   border: 2px solid rgb(0, 0, 0);
@@ -152,11 +151,18 @@ body{
   font-size: 1vw;
   color: black;
   font-weight: 700;
+  border: 0;
 }
 .section-carousel{
   padding-top: 0.5vw;
   padding-bottom: 3vw;
+  text-align: -webkit-center;
 }
+.section-carousel a{
+  text-decoration:none;
+  
+}
+
 /* Flashing */
 .hover figure:hover img {
 	opacity: 1;

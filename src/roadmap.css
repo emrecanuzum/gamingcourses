@@ -1,0 +1,79 @@
+#roadmap{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    
+}
+
+main {
+    min-width: 300px;
+    max-width: 500px;
+    margin:auto;
+    margin-bottom: 50px;
+    
+  }
+
+#roadmap .roadmap-title{
+  margin-top: 1vw;
+  font-size: 5.5rem;
+  margin-bottom: 32px;
+  margin-right: 110px;
+  margin-left: 6vw;
+  color: rgb(255, 255, 255);
+
+
+}
+#roadmap p{
+  font-family: "Arial";
+  font-size: 1.2em;
+  line-height: 1.75em;
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, #ff7300 0%, #ffd900 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  margin: 0;
+  text-align: center;
+  padding: 45px;
+  counter-increment: section;
+  position: relative;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: rgb(255, 255, 255);
+  filter: 
+      drop-shadow(rgba(0, 0, 0, 0.95) 0px 0px 1.6366px) 
+      drop-shadow(rgba(0, 0, 0, 0.767) 0px 0px 4.283px) 
+      drop-shadow(rgba(0, 0, 0, 0.44) 0px 0px 12.849px);
+
+}
+
+#roadmap p:nth-child(odd) {
+    border-right: 3px solid;
+    padding-left: 2.5vw;
+
+}
+
+#roadmap p::before {
+    left: 100%; 
+    margin-left: -20px;
+  }
+
+
+p:nth-child(even) {
+  border-left: 3px solid;
+  padding-left: 0;
+  margin-right: 100px;
+}
+  p::before {
+    right: 100%; 
+    margin-right: -20px;
+  }
+
+
+p:first-child {
+
+}
+p:last-child {
+
+}
+

@@ -8,13 +8,14 @@ import wow from './assets/wow.png';
 import dc from './assets/dc.png';
 import dcDark from './assets/dcb.png';
 import bg from './assets/gradient.png';
-import persona from './assets/persona.jpg';
-import banner2 from './assets/banner4.png';
+import persona from './assets/persona.png';
+import banner2 from './assets/banner5.png';
 
 import Carousel from "react-simply-carousel";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import './App.css';
+import './roadmap.css';
 import { useEffect } from 'react';
 
 function App() {
@@ -69,14 +70,16 @@ function App() {
       <div className='teachers'  style={{ backgroundImage:`url(${banner2})`}}>
         <h1  data-aos="fade-up">TEACHERS</h1>
         <h6  data-aos="fade-up">This could be you</h6>
+        
+      </div>  
+      <div className='section-carousel' data-aos="fade-up">
         <a href='-'>
         <div className='t-button'  data-aos="fade-up">
-          <p>START</p>
+          <p id='button'>START</p>
           
         </div>
         </a>
-      </div>  
-      <div className='section-carousel' data-aos="fade-up">
+
         <Carousel
         activeSlideIndex={activeSlideIndex}
         onRequestChange={setActiveSlideIndex}
@@ -139,7 +142,19 @@ function App() {
           </div>
         </Carousel>
       </div>
-      
+      <section id="roadmap">
+        <h3 class="roadmap-title">
+            <strong>ROAD</strong>MAP
+        </h3>
+        <main>
+          <p>Stage 1</p>
+          <p>Stage 2</p>
+          <p>Stage 3</p>
+          <p>Stage 4</p>
+          <p>Stage 5</p>
+          
+        </main>
+      </section>
     </div>
   );
 }
