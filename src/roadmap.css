@@ -7,7 +7,7 @@
 }
 
 main {
-    min-width: 300px;
+    width: 20vw;
     max-width: 500px;
     margin:auto;
     margin-bottom: 50px;
@@ -15,26 +15,26 @@ main {
   }
 
 #roadmap .roadmap-title{
+    text-shadow: 0px 0px 3vw rgb(0, 0, 0);
+  text-align: center;
   margin-top: 1vw;
-  font-size: 5.5rem;
-  margin-bottom: 32px;
-  margin-right: 110px;
-  margin-left: 6vw;
+  font-size: 5vw;
+  margin-bottom: 3vw;
   color: rgb(255, 255, 255);
 
 
 }
 #roadmap p{
   font-family: "Arial";
-  font-size: 1.2em;
-  line-height: 1.75em;
-  border-top: 3px solid;
+  font-size: 1.2vw;
+  line-height: 1.75vw;
+  border-top: 0.8vw solid;
   border-image: linear-gradient(to right, #ff7300 0%, #ffd900 100%);
   border-image-slice: 1;
-  border-width: 3px;
+  border-width: 0.4vw;
   margin: 0;
   text-align: center;
-  padding: 45px;
+  padding: 2.1vw;
   counter-increment: section;
   position: relative;
   margin-left: 5px;
@@ -44,36 +44,23 @@ main {
       drop-shadow(rgba(0, 0, 0, 0.95) 0px 0px 1.6366px) 
       drop-shadow(rgba(0, 0, 0, 0.767) 0px 0px 4.283px) 
       drop-shadow(rgba(0, 0, 0, 0.44) 0px 0px 12.849px);
-
 }
-
 #roadmap p:nth-child(odd) {
-    border-right: 3px solid;
+    border-right: 0.4vw solid;
     padding-left: 2.5vw;
-
 }
-
 #roadmap p::before {
     left: 100%; 
     margin-left: -20px;
-  }
-
-
+}
 p:nth-child(even) {
-  border-left: 3px solid;
+  border-left: 0.4vw solid;
   padding-left: 0;
   margin-right: 100px;
 }
-  p::before {
-    right: 100%; 
-    margin-right: -20px;
-  }
-
-
-p:first-child {
-
+p::before {
+  right: 100%; 
+  margin-right: -20px;
 }
-p:last-child {
 
-}
 

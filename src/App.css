@@ -102,7 +102,7 @@ body{
   padding-right: 8px;
   font-family:Tomorrow;
 }
-
+/*--------------------------JOIN-DISCORD--------------------------*/
 .join-discord{
   background-color: #f5733d
 }
@@ -116,7 +116,7 @@ body{
  /* color: rgb(52,29,120);*/
 }
 
-
+/*-------------------------TEACHERS-------------------------*/
 .teachers{
   margin-top: -5vw;
   min-height: 34vw;
@@ -125,6 +125,7 @@ body{
   text-align: justify;
 }
 .teachers h1{
+  text-shadow: 0px 0px 3vw rgb(0, 0, 0);
   color: white;
   padding-top: 8vw;
   margin-left: 5vw;
@@ -138,14 +139,14 @@ body{
   margin-top: -4vw;
 }
 .t-button{
-  box-shadow: 0px 0px 40px rgb(0, 0, 0);
+  box-shadow: 0px 0px 3vw rgb(0, 0, 0);
   text-align: center;
   margin-top: -2.5vw;
   margin-bottom: 2vw;
   background-color: #f5733d;
   max-width: 10vw;
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 8%
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 2vw;
 }
 .t-button p{
   font-size: 1vw;
@@ -162,7 +163,7 @@ body{
   text-decoration:none;
   
 }
-
+/*--------------------------HOVER--------------------------*/
 /* Flashing */
 .hover figure:hover img {
 	opacity: 1;
@@ -193,4 +194,82 @@ figure{
   width: 10vw;
   margin-left: 1vw;
   margin-right: 1vw;
+}
+
+/*-------------------------MISSION---------------------------*/
+
+.mission{
+  justify-content: center;
+  display: grid;
+}
+.mission-header h2{
+  text-shadow: 0px 0px 3vw rgb(0, 0, 0);
+  color: white;
+  margin-bottom: -2vw;
+  font-size: 5.2vw;
+  margin-top: -0.5vw;
+}
+
+.mission-context{
+  display: flex;
+  align-items: center;
+}
+.mission-context img{
+  height: min-content;
+  max-width: 25vw;
+  margin-top: -4vw;
+}
+.mission-box h6{
+  color:white;
+  font-size: 1.2vw;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+}
+
+.mission-box{
+  box-shadow: 0px 0px 3vw rgb(0, 0, 0);
+  display: flex;
+  margin-bottom: 10vw;
+  margin-top: 5vw;
+  align-items: center;
+  background-color: #2d1966;
+  /*
+    right: 10vw;
+  margin-right: 1.4vw;
+  margin-left: 1.4vw;
+  */
+  contain: content;
+  border: 2px solid rgb(247,117,61);
+  border-radius: 1vw;
+  width: 33.0vw;
+  min-height: 10vw;
+  height: auto;
+  
+}
+
+
+/*-------------------------FOOTER---------------------------*/
+
+.footer{
+  background-color:#572ec7;
+}
+.footer-text{
+  padding-top: 0.5vw;
+}
+.footer-text h6{
+color: white;
+font-size: 1vw;
+margin-bottom: 1vw;
+}
+.icons{
+  text-shadow: 0px 0px 3vw rgb(0, 0, 0);
+  justify-content: center;
+  display: flex;
+}
+
+.icons img{
+  
+  margin-left: -3vw;
+  margin-right: -3vw;
+  width: 3vw;
 }

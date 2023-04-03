@@ -10,6 +10,12 @@ import dcDark from './assets/dcb.png';
 import bg from './assets/gradient.png';
 import persona from './assets/persona.png';
 import banner2 from './assets/banner5.png';
+import objRight from './assets/object-right.png';
+import objLeft from './assets/object-left.png';
+import fb from './assets/fb.png';
+import yt from './assets/yt.png';
+import tw from './assets/tw.png';
+import ins from './assets/in.png';
 
 import Carousel from "react-simply-carousel";
 import Aos from "aos";
@@ -26,20 +32,23 @@ function App() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   return (
     <div className="App">
-
       <div className='Row-Header'>
         <h2>gamingcourses.gg</h2>
-        <img src={dc} alt=""></img>
+        <div className='hover'>
+          <a href='-'>
+            <figure>
+              <img src={dc} alt=""></img>
+            </figure>
+          </a>
+        </div>
         <h1>From Bro's to Pro's</h1>
       </div>
 
-
-      <div className='Banner'>
-      <img src={banner} alt=""></img>,
+      <div className='Banner' data-aos="fade-down">
+        <img src={banner} alt=""></img>,
       </div>
 
-
-      <div className="Landing-Bottom" style={{ backgroundImage:`url(${bg})` }}>
+      <div className="Landing-Bottom"  style={{ backgroundImage:`url(${bg})` }}>
         <div className="Row"  data-aos="fade-up">
           <div className="index-6-1">
             <img src={fifa} alt=""></img>
@@ -70,14 +79,12 @@ function App() {
       <div className='teachers'  style={{ backgroundImage:`url(${banner2})`}}>
         <h1  data-aos="fade-up">TEACHERS</h1>
         <h6  data-aos="fade-up">This could be you</h6>
-        
       </div>  
       <div className='section-carousel' data-aos="fade-up">
         <a href='-'>
-        <div className='t-button'  data-aos="fade-up">
-          <p id='button'>START</p>
-          
-        </div>
+          <div className='t-button'  data-aos="fade-up">
+            <p id='button'>START</p>  
+          </div>
         </a>
 
         <Carousel
@@ -128,7 +135,7 @@ function App() {
         ]}
         speed={400}
         easing="linear">
-          <div className='person'>
+          <div className='person' >
               <img src={persona} alt=""></img>
           </div>
           <div className='person'>
@@ -142,11 +149,30 @@ function App() {
           </div>
         </Carousel>
       </div>
-      <section id="roadmap">
-        <h3 class="roadmap-title">
-            <strong>ROAD</strong>MAP
+
+      <div className='mission'>
+        <div className='mission-header' data-aos="fade-up">
+          <h2>MISSION</h2>
+        </div>
+        <div className='mission-context' data-aos="fade-up">
+          <img src={objLeft} alt=""></img>
+          <div className='mission-box' data-aos="fade-up">
+              <h6>
+                Our mission is connect esports gaming PRO's with BRO's, 
+                provide valuable video lessons material to our subscribers 
+                while keeping our competitive esports gaming community happy and updated.
+                </h6>
+          </div>
+          <img src={objRight} alt=""></img>
+        </div> 
+      </div>
+      
+
+      <section id="roadmap" data-aos="fade-up">
+        <h3 class="roadmap-title" data-aos="fade-up">
+            ROADMAP
         </h3>
-        <main>
+        <main data-aos="fade-up">
           <p>Stage 1</p>
           <p>Stage 2</p>
           <p>Stage 3</p>
@@ -155,6 +181,42 @@ function App() {
           
         </main>
       </section>
+      
+      <div className='footer'  data-aos="fade-up">
+        <div className='footer-text'>
+          <h6>Follow us on social media.</h6>
+        </div>
+        <div className='icons'>
+          <div className='hover'>
+            <a href='-'>
+              <figure>
+                <img src={tw} alt=""></img>
+              </figure>
+            </a>
+          </div>
+          <div className='hover'>
+            <a href='-'>
+              <figure>
+                <img src={fb} alt=""></img>
+              </figure>
+            </a>
+          </div>
+          <div className='hover'>
+            <a href='-'>
+              <figure>
+                <img src={ins} alt=""></img>
+              </figure>
+            </a>
+          </div>
+          <div className='hover'>
+            <a href='-'>
+              <figure>
+                <img src={yt} alt=""></img>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
