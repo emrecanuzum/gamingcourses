@@ -44,7 +44,7 @@ function App() {
         <h1>From Bro's to Pro's</h1>
       </div>
 
-      <div className='Banner' data-aos="fade-down">
+      <div className='Banner'>
         <img src={banner} alt=""></img>,
       </div>
 
