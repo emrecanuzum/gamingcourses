@@ -1,18 +1,27 @@
 html {
   scroll-behavior: smooth;
+  z-index: -2;
+  font-family: 'Chakra Petch', sans-serif;
 }
 body{
-  background-color: #4729a4
+  z-index: -2;
+  background-color: #4729a4;
+  font-family: 'Chakra Petch', sans-serif;
 }
 
 .App {
+  z-index: -2;
+  position: absolute;
   text-align: center;
-  background-color: #4729a4
+  background-color: #4729a4;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .Row-Header{
   text-align: center;
-  background-color: rgb(52,29,120);
+  min-height: 10vh;
   contain: content;
   display: flex;
   place-content: center;
@@ -32,20 +41,71 @@ body{
   top: -2vw;
 }
 
-.Row-Header h1{
+.Row-Buttons{
   position: fixed;
-  color: rgb(247,117,61);
-  font-size: 3vw;
-  right: 10vw;
-  top: -1.6vw;
+  right: 25vw;
+  display: flex;
+  top: 2vw;
+  text-decoration: none;
 }
-.Banner{
-  background-color: rgb(52,29,120);
-}
-.Banner img{
-  width: 99vw;
+
+.Row-Header a{
+  text-decoration: none;
+  position: static;
+  color: #01fbdf;
+  font-size: 1.5vw;
+  margin-left: 3vw;
 
 }
+
+.Row-Discord img{
+  padding: 0.5vw;
+  margin-top: -1.5vw;
+  width: 3vw;
+  height: fit-content;
+
+}
+.Row-Discord{
+  contain: content;
+  max-height: 4vw;
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  border: 2px solid rgba(94, 0, 82, 0.514);
+  background-color: #00000085;
+  border-radius: 1vw;
+  right: 10vw;
+  top: 0.5vw;
+}
+
+/*-----------------------LANDING------------------------*/
+
+.Banner{
+  justify-content: center;
+}
+.Banner h1{
+  margin-top: 10vw;
+  color:#01fbdf;
+  font-size: 4vw;
+
+}
+.Banner h2{
+  margin-top: 2vw;
+  margin-bottom: 5vw;
+  color:white;
+  font-size: 2.5vw;
+
+}
+.Banner h4{
+  margin-bottom: 10vw;
+  color:white;
+  font-size: 1vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+/*-----------------GAMES----------------------*/
+
 /*text-shadow: #FC0 1px 0 10px;*/
 .Landing-Bottom {
   background-repeat: repeat;
@@ -59,25 +119,30 @@ body{
 }
 
 .Row {
+  border: 2px solid rgb(99, 0, 90);
+  border-radius: 3vw;
+  background-color: #1414148c;
   display: flex;
   padding-top: 3.5%;
   padding-bottom: 4%;
+
 }
 .index-6-1{
   align-items: center;
   contain: content;
+  box-shadow: 0px 0px 1vw rgba(255, 255, 255, 0.185);
   background-color: #141414e8;
   margin-right: 1.4vw;
   margin-left: 1.4vw;
   contain: content;
-  border: 2px solid rgb(109, 109, 109);
-  border-radius: 3%;
-  width: 12.0vw;
-  height: 17.0vw;
+  border: 2px solid rgb(94, 0, 81);
+  border-radius: 1vw;
+  width: 15.0vw;
+  height: 23.0vw;
   
 }
 .index-6-1 img{
-  height: 17.5vw;
+  height: 23vw;
   padding-left: 0;
   /*align-items: center;*/
 
@@ -104,7 +169,7 @@ body{
 }
 /*--------------------------JOIN-DISCORD--------------------------*/
 .join-discord{
-  background-color: #f5733d
+
 }
 .join-discord img{
   width: 10vw;
@@ -112,12 +177,13 @@ body{
 .join-discord h1{
   color:black;
   font-size: 2.5vw;
-  padding-bottom: 6%;
+  padding-bottom: 1%;
  /* color: rgb(52,29,120);*/
 }
 
 /*-------------------------TEACHERS-------------------------*/
 .teachers{
+  z-index: 1;
   margin-top: -5vw;
   min-height: 34vw;
   background-size: cover;
@@ -125,6 +191,7 @@ body{
   text-align: justify;
 }
 .teachers h1{
+
   text-shadow: 0px 0px 3vw rgb(0, 0, 0);
   color: white;
   padding-top: 8vw;
@@ -133,15 +200,24 @@ body{
 }
 
 .teachers h6{
+
   margin-left: 5.1vw;
   color: white;
   font-size: 1.25vw;
   margin-top: -4vw;
 }
+
+.teachers img{
+  text-align: center;
+
+  width: 10vw;
+}
+
 .t-button{
+  z-index: 1;
   box-shadow: 0px 0px 3vw rgb(0, 0, 0);
   text-align: center;
-  margin-top: -2.5vw;
+  margin-top: -6.5vw;
   margin-bottom: 2vw;
   background-color: #f5733d;
   max-width: 10vw;
@@ -154,8 +230,22 @@ body{
   font-weight: 700;
   border: 0;
 }
+
+.teacher-face{
+  z-index: -1;
+  position: relative;
+  margin-top: -25vw;
+  padding-bottom: 10vw;
+  
+}
+
+.teacher-face img{
+}
+
 .section-carousel{
-  padding-top: 0.5vw;
+  z-index: 1;
+  padding-top: 0vw;
+  margin-top: -14vw;
   padding-bottom: 3vw;
   text-align: -webkit-center;
 }
@@ -273,3 +363,4 @@ margin-bottom: 1vw;
   margin-right: -3vw;
   width: 3vw;
 }
+
