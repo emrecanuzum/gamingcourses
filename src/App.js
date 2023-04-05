@@ -6,8 +6,13 @@ import fifa from './assets/fifa.png';
 import cod from './assets/cod.png';
 import ow from './assets/ow.png';
 import wow from './assets/wow.png';
-import dcDark from './assets/dcb.png';
 import bg from './assets/newbg.png';
+import bgVideo from './assets/bg.webm';
+
+import dcIcon from './assets/icons/discord.png';
+import payIcon from './assets/icons/pay.png';
+import formIcon from './assets/icons/form.png';
+import taskIcon from './assets/icons/tasks.png';
 
 import persona from './assets/persona.png';
 import personaB from './assets/personaB.png';
@@ -86,52 +91,77 @@ function App() {
 
   return (
     <div className="App"   style={{ backgroundImage:`url(${bg})` }}>
-      <div className='Row-Header'>
-        <h2>gamingcourses.gg</h2>
-        <div className='Row-Buttons'>
-          <a href="-">MISSION</a>
-          <a href="-">TEACHERS</a>
-          <a href="-">ROADMAP</a>
-        </div>
-        <div className='Row-Discord'>
-          <div className='hover'>
-            <a href='-'>
-              <figure>
-                <img src={dcw} alt=""></img>    
-              </figure>       
-            </a>
+      <div className='videoBg'
+      style={{
+        contain: 'content'
+      }}>
+        <div className='Row-Header'>
+          <h2>gamingcourses.gg</h2>
+          <div className='Row-Buttons'>
+            <a href="#missionSection">MISSION</a>
+            <a href="#teachersSection">TEACHERS</a>
+            <a href="#roadmap">ROADMAP</a>
           </div>
+          <div className='Row-Discord'>
+            <div className='hover'>
+              <a href='-'>
+                <figure>
+                  <img src={dcw} alt=""></img>    
+                </figure>       
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr></hr>
+
+        <div className='Banner' >
+
+        <video autoPlay loop muted
+        style={{
+          position: "absolute",
+          width: "100%",
+          left: "50%",
+          top: "50%",
+          height: "100%",
+          objectFit: "cover",
+          transform: "translate(-50%, -50%)",
+          zIndex: "-1"
+        }}
+        >
+          <source src={bgVideo} type='video/mp4'/>
+        </video>
+          <h1>LOREMIPSUM</h1>
+          <h2>From Bro's to Pro's</h2>
+          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </h4>
+        </div>
+
+        <div className="Landing-Bottom">
+          <div className="Row"  data-aos="fade-up">
+            <div className="index-6-1">
+              <img src={fifa} alt=""></img>
+            </div>
+            <div className="index-6-1">
+              <img src={cod} alt=""></img>
+            </div>
+            <div className="index-6-1">
+              <img src={ow} alt=""></img>
+            </div>
+            <div className="index-6-1">
+              <img src={wow} alt=""></img>
+            </div>
+          </div>
+        
         </div>
       </div>
 
-      <hr></hr>
+      <hr style={{
+        marginTop:0,
+        }}></hr>
 
-      <div className='Banner'>
-        <h1>LOREMIPSUM</h1>
-        <h2>From Bro's to Pro's</h2>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </h4>
-      </div>
-
-      <div className="Landing-Bottom">
-        <div className="Row"  data-aos="fade-up">
-          <div className="index-6-1">
-            <img src={fifa} alt=""></img>
-          </div>
-          <div className="index-6-1">
-            <img src={cod} alt=""></img>
-          </div>
-          <div className="index-6-1">
-            <img src={ow} alt=""></img>
-          </div>
-          <div className="index-6-1">
-            <img src={wow} alt=""></img>
-          </div>
-        </div>
-      </div>
-
+      <section id="missionSection"></section>
       <div className='mission'>
         <div className='mission-header' data-aos="fade-up">
           <h2>MISSION</h2>
@@ -151,15 +181,38 @@ function App() {
 
       <div className='join-discord'>
         <div className='hover'>
-        <a href='-'>
-          <figure>
-            <img src={dcDark} alt="" data-aos="fade-up"></img>    
-          </figure>       
-        </a>
-        <h1 data-aos="fade-up">JOIN DISCORD</h1>
+          <h1 data-aos="fade-up">HOW IT WORKS</h1>
+          <h2 data-aos="fade-up">It's easier than you think. Follow 4 simple easy steps</h2>
+          <div className='dcRow' data-aos="fade-up">
+            <dc className='dcGrid'>
+              <div className='dcImg'>
+                <img src={dcIcon} alt=''></img>
+              </div>
+              <h4>JOIN</h4>
+            </dc>
+            <dc className='dcGrid'>
+              <div className='dcImg'>
+                <img src={formIcon} alt=''></img>
+              </div>
+              <h4>REGISTER</h4>
+            </dc>
+            <dc className='dcGrid'>
+              <div className='dcImg'>
+                <img src={taskIcon} alt=''></img>
+              </div>
+              <h4>COMPLETE</h4>
+            </dc>
+            <dc className='dcGrid'>
+              <div className='dcImg'>
+                <img src={payIcon} alt=''></img>
+              </div>
+              <h4>GET PAID</h4>
+            </dc>
+          </div>
         </div>
       </div>
 
+      <section id="teachersSection"></section>
       <div className='teachers'>
           <h1 id="tHeader" data-aos="fade-up">TEACHERS</h1>
           <h6 id="tDesc" data-aos="fade-up">This could be you</h6>
@@ -295,7 +348,7 @@ function App() {
 
 		
 	</section> 
-      <div className='footer'  data-aos="fade-up">
+      <div className='footer'>
         <div className='footer-text'>
           <h6>Follow us on social media.</h6>
         </div>

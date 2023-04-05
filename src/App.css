@@ -19,13 +19,18 @@ body{
   background-repeat: no-repeat;
 }
 
+.videoBg hr{
+  margin-top: 1vh;
+}
+
 .Row-Header{
+  background-color: rgba(0, 0, 0, 0.507);
   text-align: center;
   min-height: 10vh;
+  margin-bottom: -0.6vw;
   contain: content;
   display: flex;
   place-content: center;
-
 }
 .Row-Header img{
   position: relative;
@@ -82,11 +87,12 @@ body{
 
 .Banner{
   justify-content: center;
+  text-shadow: 0px 0px 1vw rgb(0, 0, 0);
 }
 .Banner h1{
   margin-top: 10vw;
   color:#01fbdf;
-  font-size: 4vw;
+  font-size: 5vw;
 
 }
 .Banner h2{
@@ -167,20 +173,63 @@ body{
   padding-right: 8px;
   font-family:Tomorrow;
 }
+
+
 /*--------------------------JOIN-DISCORD--------------------------*/
 .join-discord{
+  display: flex;
+  justify-content: center;
 
 }
-.join-discord img{
-  width: 10vw;
+.dcRow{
+  margin-top: 4vw;
+  display: flex;
+  min-height: max-content;
+}
+.dcImg img{
+  width: 4vw;
+  top: 2.3vh;
+  position: absolute;
+  margin-left: -2vw;
+  margin-right: 2vw;
+}
+.dcGrid h4{
+  color: white;
+  text-shadow: 0px 0px 1vw rgb(0, 0, 0);
+  margin-top: 0.5vw;
+  position: relative;
+  font-size: 1.4vw;
+
+}
+.dcImg{
+  align-items: center;
+  contain: content;
+  box-shadow: 0px 0px 1vw rgba(255, 255, 255, 0.185);
+  background-color: #141414e8;
+  margin-right: 1.4vw;
+  margin-left: 1.4vw;
+  contain: content;
+  border: 2px solid rgb(94, 0, 81);
+  border-radius: 1vw;
+  width: 7.0vw;
+  height: 7.0vw;
 }
 .join-discord h1{
-  color:black;
-  font-size: 2.5vw;
-  padding-bottom: 1%;
- /* color: rgb(52,29,120);*/
+  text-shadow: 0px 0px 3vw rgb(0, 0, 0);
+  color: white;
+  margin-bottom: -2vw;
+  font-size: 5.2vw;
+  margin-top: 1vw;
 }
-
+.join-discord h2{
+  text-shadow: 0px 0px 3vw rgb(0, 0, 0);
+  color: white;
+  margin-bottom: -2vw;
+  font-weight: 100;
+  font-size: 1vw;
+  margin-top: 1.5vw;
+  margin-bottom: 1.5vw;
+}
 /*-------------------------TEACHERS-------------------------*/
 .teachers{
   z-index: 1;
@@ -292,12 +341,15 @@ figure{
   justify-content: center;
   display: grid;
 }
+
+
+
 .mission-header h2{
   text-shadow: 0px 0px 3vw rgb(0, 0, 0);
   color: white;
   margin-bottom: -2vw;
   font-size: 5.2vw;
-  margin-top: -0.5vw;
+  margin-top: 1vw;
 }
 
 .mission-context{
@@ -344,7 +396,7 @@ figure{
   background-color:#572ec7;
 }
 .footer-text{
-  padding-top: 0.5vw;
+  padding-top: 0.005vw;
 }
 .footer-text h6{
 color: white;
