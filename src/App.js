@@ -23,10 +23,15 @@ import personaO from './assets/personaO.png';
 
 import objRight from './assets/object-right.png';
 import objLeft from './assets/object-left.png';
+
+import discordBackground from './assets/purple Modern Esport Gaming gaming banner.svg';
+
 import fb from './assets/fb.png';
 import yt from './assets/yt.png';
 import tw from './assets/tw.png';
 import ins from './assets/in.png';
+
+
 
 import Carousel from "react-simply-carousel";
 import Aos from "aos";
@@ -136,6 +141,13 @@ function App() {
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </h4>
+
+          <a href='-'>
+          <div className='Landingbutton'  data-aos="fade-up">
+            <p id='button'>START</p>  
+          </div>
+        </a>
+
         </div>
 
         <div className="Landing-Bottom">
@@ -293,12 +305,24 @@ function App() {
         </Carousel>  
       </div>
       
-      
+      <div className='join-community'>
+        <img src={discordBackground} alt=''></img>
+        <h3 class="roadmap-title" data-aos="fade-up">
+            JOIN OUR COMMUNITY
+        </h3>
+        
+        <a href='-'>
+          <div className='Landingbutton'  data-aos="fade-up">
+            <p id='button'>JOIN NOW</p>  
+          </div>
+        </a>
+      </div>
 
       <section id="roadmap" data-aos="fade-up">
         <h3 class="roadmap-title" data-aos="fade-up">
             ROADMAP
         </h3>
+        
       </section>
       
       <section id="cd-timeline" class="cd-container">
