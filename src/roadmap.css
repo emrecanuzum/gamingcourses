@@ -24,6 +24,17 @@ main {
 
 
 }
+@media (max-width:480px){
+  #roadmap .roadmap-title{
+    text-shadow: 0px 0px 3vw rgb(0, 0, 0);
+  text-align: center;
+  margin-top: -10vw;
+  font-size: 9.2vw;
+  margin-bottom: -10vw;
+  color: rgb(255, 255, 255);
+}
+}
+
 #roadmap p{
   font-family: "Arial";
   font-size: 1.2vw;

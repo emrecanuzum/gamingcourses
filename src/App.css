@@ -54,7 +54,7 @@ body{
   text-decoration: none;
 }
 
-.Row-Header a{
+.rowHeader{
   text-decoration: none;
   position: static;
   color: #01fbdf;
@@ -82,7 +82,62 @@ body{
   right: 10vw;
   top: 0.5vw;
 }
+@media (max-width:480px){
+  .Row-Header{
+    background-color: rgba(0, 0, 0, 0.507);
+    text-align: center;
+    min-height: 4vh;
+    margin-bottom: -2vw;
+    contain: content;
+    display: flex;
+    place-content: center;
+  }
+  .Row-Header h2{
+    position: fixed;
+    color: white;
+    font-size: 4vw;
+    left: 6vw;
+    top: -2vw;
+  }
+  .Row-Buttons{
+    position: fixed;
+    right: 21vw;
+    display: flex;
+    top: 3vw;
+    text-decoration: none;
+  }
+  .rowHeader{
+    text-decoration: none;
+    position: static;
+    color: #01fbdf;
+    font-size: 2vw;
+    margin-left: 3vw;
+  }
+  .Row-Discord img{
+    padding: 0vw;
+    top: vw;
+    left: -7vw;
+    width: 4vw;
+    height: auto;
+  }
+  .Row-Discord{
+    contain: content;
+    max-height: 5vw;
+    max-width: 10vw;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    border: 2px solid rgba(94, 0, 82, 0.514);
+    background-color: #00000085;
+    border-radius: 1vw;
+    right: 6vw;
+    top: 1vw;
+  }
+  .dcHeader{
+    top: -4vw;
 
+  }
+}
 /*-----------------------LANDING------------------------*/
 
 
@@ -141,6 +196,27 @@ body{
   font-weight: 700;
   border: 0;
 }
+@media (max-width:480px){
+  .Banner h1{
+  margin-top: 10vw;
+  color:#01fbdf;
+  font-size: 10vw;
+}
+.Banner h2{
+  margin-top: -5vw;
+  margin-bottom: 5vw;
+  color:white;
+  font-size: 5vw;
+
+}
+.Banner h4{
+  margin-bottom: 10vw;
+  color:white;
+  font-size: 2vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+}
 /*-----------------GAMES----------------------*/
 
 /*text-shadow: #FC0 1px 0 10px;*/
@@ -176,13 +252,11 @@ body{
   border-radius: 1vw;
   width: 15.0vw;
   height: 23.0vw;
-  
 }
 .index-6-1 img{
   height: 23vw;
   padding-left: 0;
   /*align-items: center;*/
-
   padding-bottom: 5px;
 }
 .index-6-1 h4 {
@@ -204,7 +278,28 @@ body{
   padding-right: 8px;
   font-family:Tomorrow;
 }
-
+@media (max-width:480px){
+  .index-6-1{
+    align-items: center;
+    contain: content;
+    box-shadow: 0px 0px 1vw rgba(255, 255, 255, 0.185);
+    background-color: #141414e8;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    contain: content;
+    border: 2px solid rgb(94, 0, 81);
+    border-radius: 1vw;
+    width: 19.0vw;
+    height: 27.0vw;
+    
+  }
+  .index-6-1 img{
+    height: 28vw;
+    padding-left: 0;
+    /*align-items: center;*/
+    padding-bottom: 5px;
+  }
+}
 
 /*--------------------------JOIN-DISCORD--------------------------*/
 .join-discord{
@@ -213,6 +308,7 @@ body{
 
 }
 .dcRow{
+  padding-left: 4vw;
   margin-top: 4vw;
   display: flex;
   min-height: max-content;
@@ -230,7 +326,6 @@ body{
   margin-top: 0.5vw;
   position: relative;
   font-size: 1.4vw;
-
 }
 .dcImg{
   align-items: center;
@@ -260,6 +355,51 @@ body{
   font-size: 1vw;
   margin-top: 1.5vw;
   margin-bottom: 1.5vw;
+}
+
+@media (max-width:480px){
+.join-discord h1{
+  text-shadow: 0px 0px 3vw rgb(0, 0, 0);
+  color: white;
+  margin-bottom: -2vw;
+  font-size: 8.2vw;
+  margin-top: 1vw;
+}
+.join-discord h2{
+  text-shadow: 0px 0px 3vw rgb(0, 0, 0);
+  color: white;
+  margin-bottom: -2vw;
+  font-weight: 100;
+  font-size: 2vw;
+  margin-top: 1.5vw;
+  margin-bottom: 1.5vw;
+}
+.dcImg{
+  align-items: center;
+  contain: content;
+  box-shadow: 0px 0px 1vw rgba(255, 255, 255, 0.185);
+  background-color: #141414e8;
+  margin-right: 1.4vw;
+  margin-left: 1.4vw;
+  contain: content;
+  border: 2px solid rgb(94, 0, 81);
+  border-radius: 1vw;
+  width: 7.0vw;
+  height: 7.0vw;
+}
+.dcImg img{
+  width: 4vw;
+  top: 0.7vh;
+  position: absolute;
+  margin-left: -2vw;
+  margin-right: 2vw;
+}
+.dcRow{
+  margin-top: 5vw;
+  padding-left: 8vw;
+  display: flex;
+  min-height: max-content;
+}
 }
 /*-------------------------TEACHERS-------------------------*/
 .teachers{
@@ -315,7 +455,6 @@ body{
   position: relative;
   margin-top: -25vw;
   padding-bottom: 10vw;
-  
 }
 
 .section-carousel{
@@ -328,6 +467,29 @@ body{
 .section-carousel a{
   text-decoration:none;
   
+}
+
+@media (max-width:480px){
+  .teacher-face img{
+    width: 55vw;
+  }
+  .person img{
+    width: 20vw;
+  }
+  .teachers h1{
+    text-shadow: 0px 0px 3vw rgb(0, 0, 0);
+    color: white;
+    padding-top: 8vw;
+    margin-left: 5vw;
+    font-size: 8.2vw;
+  }
+  .teachers h6{
+
+  margin-left: 5.1vw;
+  color: white;
+  font-size: 2.2vw;
+  margin-top: -4vw;
+}
 }
 /*--------------------------HOVER--------------------------*/
 /* Flashing */
@@ -415,6 +577,42 @@ figure{
   height: auto;
   
 }
+
+@media (max-width:480px){
+  .mission-header h2{
+  text-shadow: 0px 0px 3vw rgb(0, 0, 0);
+  color: white;
+  margin-bottom: -2vw;
+  font-size: 8.2vw;
+  margin-top: 1vw;
+}
+.mission-box h6{
+  color:white;
+  font-size: 2vw;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+}
+.mission-box{
+  box-shadow: 0px 0px 3vw rgb(0, 0, 0);
+  display: flex;
+  margin-bottom: 10vw;
+  margin-top: 5vw;
+  align-items: center;
+  background-color: #2d1966;
+  /*
+    right: 10vw;
+  margin-right: 1.4vw;
+  margin-left: 1.4vw;
+  */
+  contain: content;
+  border: 2px solid rgb(247,117,61);
+  border-radius: 1vw;
+  width: 44.0vw;
+  min-height: 10vw;
+  height: auto;
+  
+}
+}
 /*----------------------JOIN-COMMUNITY------------------------*/
 .join-community{
   contain: content;
@@ -450,7 +648,27 @@ figure{
   transform: translate(-50%, -50%);
   z-index: -1;
 }
-
+@media (max-width:480px){
+  .join-community h3{
+  text-shadow: 0px 0px 3vw rgb(0, 0, 0);
+  color: white;
+  margin-bottom: -4vw;
+  font-size: 8.2vw;
+  margin-top: 1vw;
+}
+  .join-community img{
+    top: 40%;
+    height: auto;
+  }
+  .join-community .Landingbutton{
+  margin-top: 7vw;
+  max-width: 20vw;
+  max-height: 15vw;
+}
+  .join-community{
+    height: 30vh;
+  }
+}
 
 /*-------------------------FOOTER---------------------------*/
 
@@ -470,11 +688,24 @@ margin-bottom: 1vw;
   justify-content: center;
   display: flex;
 }
-
 .icons img{
-  
   margin-left: -3vw;
   margin-right: -3vw;
   width: 3vw;
 }
 
+@media (max-width:480px){
+  .footer-text{
+    padding-top: 0.01vw;
+  }
+  .icons img{
+    margin-left: -10vw;
+    margin-right: -10vw;
+    width: 10vw;
+  }
+  .footer-text h6{
+    color: white;
+    font-size: 4vw;
+    margin-bottom: 3vw;
+    }
+}

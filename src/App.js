@@ -103,13 +103,13 @@ function App() {
         <div className='Row-Header'>
           <h2>gamingcourses.gg</h2>
           <div className='Row-Buttons'>
-            <a href="#missionSection">MISSION</a>
-            <a href="#teachersSection">TEACHERS</a>
-            <a href="#roadmap">ROADMAP</a>
+            <a className='rowHeader' href="#missionSection">MISSION</a>
+            <a className='rowHeader' href="#teachersSection">TEACHERS</a>
+            <a className='rowHeader' href="#roadmap">ROADMAP</a>
           </div>
           <div className='Row-Discord'>
             <div className='hover'>
-              <a href='-'>
+              <a className="dcHeader" href='-'>
                 <figure>
                   <img src={dcw} alt=""></img>    
                 </figure>       
@@ -318,8 +318,8 @@ function App() {
         </a>
       </div>
 
-      <section id="roadmap" data-aos="fade-up">
-        <h3 class="roadmap-title" data-aos="fade-up">
+      <section id="roadmap">
+        <h3 class="roadmap-title">
             ROADMAP
         </h3>
         
