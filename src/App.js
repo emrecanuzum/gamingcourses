@@ -6,8 +6,12 @@ import fifa from './assets/fifa.png';
 import cod from './assets/cod.png';
 import ow from './assets/ow.png';
 import wow from './assets/wow.png';
+import lol from './assets/lol.jpeg';
+import cs from './assets/cs.jpg';
+import dota from './assets/dota.jpg';
+import ufc from './assets/ufc.jpg';
+import nba from './assets/nba.jpg';
 import bg from './assets/newbg.png';
-import bgVideo from './assets/bg.webm';
 
 import dcIcon from './assets/icons/discord.png';
 import payIcon from './assets/icons/pay.png';
@@ -24,7 +28,8 @@ import personaO from './assets/personaO.png';
 import objRight from './assets/object-right.png';
 import objLeft from './assets/object-left.png';
 
-import discordBackground from './assets/purple Modern Esport Gaming gaming banner.svg';
+import discordBackground from './assets/2.svg';
+import headerBackground from './assets/1.svg';
 
 import fb from './assets/fb.png';
 import yt from './assets/yt.png';
@@ -101,10 +106,11 @@ function App() {
         contain: 'content'
       }}>
         <div className='Row-Header'>
-          <h2>gamingcourses.gg</h2>
+          <h2>From Bro’s to Pro’s </h2>
           <div className='Row-Buttons'>
+            <a className='rowHeader' href="#teachersSection">GAMES</a>
+            <a className='rowHeader' href="#teachersSection">TUTORS</a>
             <a className='rowHeader' href="#missionSection">MISSION</a>
-            <a className='rowHeader' href="#teachersSection">TEACHERS</a>
             <a className='rowHeader' href="#roadmap">ROADMAP</a>
           </div>
           <div className='Row-Discord'>
@@ -117,83 +123,133 @@ function App() {
             </div>
           </div>
         </div>
-        <hr></hr>
 
-        <div className='Banner' >
 
-        <video autoPlay loop muted
-        style={{
-          position: "absolute",
-          width: "100%",
-          left: "50%",
-          top: "50%",
-          height: "100%",
-          objectFit: "cover",
-          transform: "translate(-50%, -50%)",
-          zIndex: "-1"
-        }}
-        >
-          <source src={bgVideo} type='video/mp4'/>
-        </video>
-          <h1>LOREMIPSUM</h1>
-          <h2>From Bro's to Pro's</h2>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <div className='Banner'  style={{ backgroundImage:`url(${headerBackground})` }}>
+
+          <h1>Master your in-game skills </h1>
+          <h2>Rule the online world</h2>
+          <h4>Annoying friend keeps running over you in online matchup? 
+            Level up your game. 
+            Join our courses and get more competitive advantages straight from our PRO’s. 
           </h4>
 
           <a href='-'>
           <div className='Landingbutton'  data-aos="fade-up">
-            <p id='button'>START</p>  
+            <p id='button'>JOIN NOW</p>  
           </div>
         </a>
 
         </div>
 
         <div className="Landing-Bottom">
-          <div className="Row"  data-aos="fade-up">
-            <div className="index-6-1">
-              <img src={fifa} alt=""></img>
-            </div>
-            <div className="index-6-1">
-              <img src={cod} alt=""></img>
-            </div>
-            <div className="index-6-1">
-              <img src={ow} alt=""></img>
-            </div>
-            <div className="index-6-1">
-              <img src={wow} alt=""></img>
-            </div>
+          
+        <Carousel
+        activeSlideIndex={activeSlideIndex}
+        onRequestChange={setActiveSlideIndex}
+        itemsToShow={1}
+        itemsToScroll={1}
+        forwardBtnProps={{
+          //here you can also pass className, or any other button element attributes
+          style: {
+            alignSelf: 'center',
+            background: 'black',
+            border: 'none',
+            borderRadius: '50%',
+            color: 'white',
+            cursor: 'pointer',
+            fontSize: '20px',
+            height: 30,
+            lineHeight: 1,
+            textAlign: 'center',
+            width: 30,
+          },
+          children: <span>{`>`}</span>
+        }}
+        backwardBtnProps={{
+          //here you can also pass className, or any other button element attributes
+          style: {
+            alignSelf: 'center',
+            background: 'black',
+            border: 'none',
+            borderRadius: '50%',
+            color: 'white',
+            cursor: 'pointer',
+            fontSize: '20px',
+            height: 30,
+            lineHeight: 1,
+            textAlign: 'center',
+            width: 30,
+          },
+          children: <span>{`<`}</span>,
+        }}
+        responsiveProps={[
+          {
+            itemsToShow: 3,
+            itemsToScroll: 1,
+            minWidth: 400,
+          }
+        ]}
+        speed={400}
+        easing="linear">
+
+          <div className='gameimg' >
+            <img id="persona" src={ow} alt=""></img>
           </div>
+          <div className='gameimg'>
+            <img id="persona" src={fifa} alt=""></img>
+          </div>
+          <div className='gameimg'>
+            <img id="persona" src={cod} alt=""></img>
+          </div>
+          <div className='gameimg'>
+            <img id="persona" src={wow} alt=""></img>
+          </div>
+          <div className='gameimg' >
+            <img id="persona" src={lol} alt=""></img>
+          </div>
+          <div className='gameimg' >
+            <img id="persona" src={dota} alt=""></img>
+          </div>
+          <div className='gameimg' >
+            <img id="persona" src={cs} alt=""></img>
+          </div>
+          <div className='gameimg' >
+            <img id="persona" src={ufc} alt=""></img>
+          </div>
+          <div className='gameimg' >
+            <img id="persona" src={nba} alt=""></img>
+          </div>
+          
+        </Carousel>  
         
         </div>
       </div>
 
-      <hr style={{
-        marginTop:0,
-        }}></hr>
+      
 
-      <section id="missionSection"></section>
-      <div className='mission'>
-        <div className='mission-header' data-aos="fade-up">
-          <h2>MISSION</h2>
-        </div>
-        <div className='mission-context' data-aos="fade-up">
-          <img src={objLeft} alt=""></img>
-          <div className='mission-box' data-aos="fade-up">
-              <h6>
-                Our mission is connect esports gaming PRO's with BRO's, 
-                provide valuable video lessons material to our subscribers 
-                while keeping our competitive esports gaming community happy and updated.
-                </h6>
+      <div className='join-community'>
+        <img src={discordBackground} alt=''></img>
+        <h3 class="roadmap-title" data-aos="fade-up">
+            JOIN OUR COMMUNITY
+        </h3>
+        <h4>Become our discord community member to catch the 
+          latest gaming news, rumors and chat with your tutors. 
+          Every early discord group member will have a 50 % 
+          discount on gaming courses and will have a possibility
+           to participate in our tournaments + win prizes every 
+           month.
+          </h4>
+        <a href='-'>
+          <div className='Landingbutton'  data-aos="fade-up">
+            <p id='button'>JOIN NOW</p>  
           </div>
-          <img src={objRight} alt=""></img>
-        </div> 
+        </a>
       </div>
 
       <div className='join-discord'>
         <div className='hover'>
-          <h1 data-aos="fade-up">HOW IT WORKS</h1>
+          <h1 data-aos="fade-up">WIN IN 4 STEPS</h1>
           <h2 data-aos="fade-up">It's easier than you think. Follow 4 simple easy steps</h2>
           <div className='dcRow' data-aos="fade-up">
             <dc className='dcGrid'>
@@ -218,7 +274,7 @@ function App() {
               <div className='dcImg'>
                 <img src={payIcon} alt=''></img>
               </div>
-              <h4>GET PAID</h4>
+              <h4>GO PRO</h4>
             </dc>
           </div>
         </div>
@@ -228,6 +284,8 @@ function App() {
       <div className='teachers'>
           <h1 id="tHeader" data-aos="fade-up">TEACHERS</h1>
           <h6 id="tDesc" data-aos="fade-up">This could be you</h6>
+          <h6 id="tLongDesc">T his could be you his could be you his 
+          could be you his could be you his could be you</h6>
       </div>  
       <div className='teacher-face'>
         <img src={persona} alt="" id="expand"></img>
@@ -305,19 +363,22 @@ function App() {
         </Carousel>  
       </div>
       
-      <div className='join-community'>
-        <img src={discordBackground} alt=''></img>
-        <h3 class="roadmap-title" data-aos="fade-up">
-            JOIN OUR COMMUNITY
-        </h3>
-        
-        <a href='-'>
-          <div className='Landingbutton'  data-aos="fade-up">
-            <p id='button'>JOIN NOW</p>  
+      <section id="missionSection"></section>
+      <div className='mission'>
+        <div className='mission-header' data-aos="fade-up">
+          <h2>MISSION</h2>
+        </div>
+        <div className='mission-context' data-aos="fade-up">
+          <img src={objLeft} alt=""></img>
+          <div className='mission-box' data-aos="fade-up">
+              <h6>
+              Connect esports gaming PRO's with BRO's, provide valuable video lessons material to our subscribers while keeping our competitive esports gaming community happy and updated.
+                </h6>
           </div>
-        </a>
+          <img src={objRight} alt=""></img>
+        </div> 
       </div>
-
+      
       <section id="roadmap">
         <h3 class="roadmap-title">
             ROADMAP
@@ -364,9 +425,9 @@ function App() {
 			</div>
 
 			<div class="cd-timeline-content">
-				<h2>Title of section 4</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-				<span class="cd-date">Feb 14</span>
+				<h2>TBA</h2>
+				<p></p>
+				<span class="cd-date">TBA</span>
 			</div>
 		</div>
 

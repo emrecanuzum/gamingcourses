@@ -26,8 +26,8 @@ body{
 .Row-Header{
   background-color: rgba(0, 0, 0, 0.507);
   text-align: center;
-  min-height: 10vh;
-  margin-bottom: -0.6vw;
+  min-height: 11vh;
+  margin-bottom: 0vw;
   contain: content;
   display: flex;
   place-content: center;
@@ -65,7 +65,7 @@ body{
 
 .Row-Discord img{
   padding: 0.5vw;
-  margin-top: -1.5vw;
+  margin-top: 0.5vw;
   width: 3vw;
   height: fit-content;
 
@@ -142,9 +142,12 @@ body{
 
 
 .Banner{
+  min-height: 44vw;
+  margin-top: -10vw;
   text-align: -webkit-center;
   justify-content: center;
-
+  background-repeat: no-repeat;
+  background-size: cover;
   text-shadow: 0px 0px 1vw rgb(0, 0, 0);
 }
 
@@ -152,7 +155,7 @@ body{
   text-decoration: none;
 }
 .Banner h1{
-  margin-top: 10vw;
+  padding-top: 15vw;
   color:#01fbdf;
   font-size: 5vw;
 
@@ -227,8 +230,8 @@ body{
   background-position-y: 30%;
   background-size: contain;
   height: auto;
-  margin-top: -3vw;
-  padding-bottom: 2%;
+  margin-top: 1vw;
+  padding-bottom: 1vw;
 }
 
 .Row {
@@ -308,7 +311,7 @@ body{
 
 }
 .dcRow{
-  padding-left: 4vw;
+
   margin-top: 4vw;
   display: flex;
   min-height: max-content;
@@ -438,7 +441,7 @@ body{
   text-align: center;
   margin-top: -6.5vw;
   margin-bottom: 2vw;
-  background-color: #f5733d;
+  background-color: #e6aaf5;
   max-width: 10vw;
   border: 3px solid rgb(0, 0, 0);
   border-radius: 2vw;
@@ -483,12 +486,21 @@ body{
     margin-left: 5vw;
     font-size: 8.2vw;
   }
+  .teachers h4{
+    margin-left: 5.1vw;
+    color: white;
+    font-size: 2.2vw;
+    margin-top: -4vw;
+  }
   .teachers h6{
-
-  margin-left: 5.1vw;
-  color: white;
-  font-size: 2.2vw;
-  margin-top: -4vw;
+    margin-left: 5.1vw;
+    color: white;
+    font-size: 2.2vw;
+    margin-top: 5vw;
+  }
+  #tLongDesc h6{
+    margin-top: 5vw;
+    max-width: 30vw;
 }
 }
 /*--------------------------HOVER--------------------------*/
@@ -517,7 +529,11 @@ body{
 figure{
   margin-block-start: 0em;
 }
-
+.gameimg img{
+  width: 15vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
 .person img{
   width: 10vw;
   margin-left: 1vw;
@@ -636,7 +652,15 @@ figure{
   color: white;
   margin-bottom: -2vw;
   font-size: 5.2vw;
-  margin-top: 1vw;
+  margin-top: 3.5vw;
+}
+.join-community h4{
+  margin-bottom: 4vw;
+  margin-top: 4vw;
+  color:white;
+  font-size: 1.4vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
 .join-community img{
   position: absolute;
@@ -673,7 +697,7 @@ figure{
 /*-------------------------FOOTER---------------------------*/
 
 .footer{
-  background-color:#572ec7;
+  background-color:#573f67;
 }
 .footer-text{
   padding-top: 0.005vw;
