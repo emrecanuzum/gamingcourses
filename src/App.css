@@ -50,7 +50,6 @@ width: 5vw;
 }
 
 .Row-Buttons{
-
   right: 25vw;
   display: flex;
   padding-top: 2vw;
@@ -233,8 +232,7 @@ width: 5vw;
   background-position-y: 30%;
   background-size: contain;
   height: auto;
-  margin-top: 1vw;
-  padding-bottom: 1vw;
+  margin-top: 3vw;
 }
 
 .Row {
@@ -314,7 +312,6 @@ width: 5vw;
 
 }
 .dcRow{
-
   margin-top: 4vw;
   display: flex;
   min-height: max-content;
@@ -553,10 +550,10 @@ figure{
 
 .mission{
   justify-content: center;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
   display: grid;
 }
-
-
 
 .mission-header h2{
   text-shadow: 0px 0px 3vw rgb(0, 0, 0);
@@ -641,6 +638,8 @@ figure{
 /*----------------------JOIN-COMMUNITY------------------------*/
 .join-community{
   contain: content;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
   height: 100vh;
   text-align: -webkit-center;
   justify-content: center;
