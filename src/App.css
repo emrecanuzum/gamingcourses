@@ -32,11 +32,14 @@ body{
   display: flex;
   place-content: center;
 }
-.Row-Header img{
-  position: relative;
-  width: 6vw;
-  height: 6vw;
-  
+.RowLogo{
+  contain: content;
+  position: fixed;
+  top: 0.7vw;
+  left: 10vw;
+}
+.RowLogo img{
+width: 5vw;
 }
 .Row-Header h2{
   position: fixed;
@@ -47,10 +50,10 @@ body{
 }
 
 .Row-Buttons{
-  position: fixed;
+
   right: 25vw;
   display: flex;
-  top: 2vw;
+  padding-top: 2vw;
   text-decoration: none;
 }
 
@@ -100,8 +103,6 @@ body{
     top: -2vw;
   }
   .Row-Buttons{
-    position: fixed;
-    right: 21vw;
     display: flex;
     top: 3vw;
     text-decoration: none;
@@ -115,7 +116,7 @@ body{
   }
   .Row-Discord img{
     padding: 0vw;
-    top: vw;
+    position: relative;
     left: -7vw;
     width: 4vw;
     height: auto;
@@ -161,13 +162,14 @@ body{
 
 }
 .Banner h2{
-  margin-top: 2vw;
-  margin-bottom: 5vw;
+  margin-top: 4vw;
+
   color:white;
   font-size: 2.5vw;
 
 }
 .Banner h4{
+  margin-top: 4vw;
   margin-bottom: 10vw;
   color:white;
   font-size: 1vw;
@@ -201,6 +203,7 @@ body{
 }
 @media (max-width:480px){
   .Banner h1{
+  margin-left: 0.7vw;
   margin-top: 10vw;
   color:#01fbdf;
   font-size: 10vw;
@@ -356,7 +359,7 @@ body{
   margin-bottom: -2vw;
   font-weight: 100;
   font-size: 1vw;
-  margin-top: 1.5vw;
+  margin-top: 5vw;
   margin-bottom: 1.5vw;
 }
 
@@ -414,7 +417,6 @@ body{
   text-align: justify;
 }
 .teachers h1{
-
   text-shadow: 0px 0px 3vw rgb(0, 0, 0);
   color: white;
   padding-top: 8vw;
@@ -423,11 +425,18 @@ body{
 }
 
 .teachers h6{
-
   margin-left: 5.1vw;
   color: white;
   font-size: 1.25vw;
   margin-top: -4vw;
+}
+
+.teachers h5{
+  max-width: 38vw;
+  margin-left: 5.1vw;
+  color: white;
+  font-size: 1.25vw;
+  margin-top: 1vw;
 }
 
 .teachers img{
@@ -656,7 +665,7 @@ figure{
 }
 .join-community h4{
   margin-bottom: 4vw;
-  margin-top: 4vw;
+  margin-top: 5vw;
   color:white;
   font-size: 1.4vw;
   margin-left: 15vw;

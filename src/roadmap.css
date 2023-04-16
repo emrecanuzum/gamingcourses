@@ -15,9 +15,9 @@ main {
   }
 
 #roadmap .roadmap-title{
-    text-shadow: 0px 0px 3vw rgb(0, 0, 0);
+  text-shadow: 0px 0px 3vw rgb(0, 0, 0);
   text-align: center;
-  margin-top: 1vw;
+  top: 1vw;
   font-size: 5vw;
   margin-bottom: 3vw;
   color: rgb(255, 255, 255);

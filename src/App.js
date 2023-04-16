@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import React from 'react'
 
+import logo from './assets/logo.png';
 import dcw from './assets/discordW.png';
 import fifa from './assets/fifa.png';
 import cod from './assets/cod.png';
@@ -28,7 +29,7 @@ import personaO from './assets/personaO.png';
 import objRight from './assets/object-right.png';
 import objLeft from './assets/object-left.png';
 
-import discordBackground from './assets/2.svg';
+import discordBackground from './assets/joinBG.png';
 import headerBackground from './assets/1.svg';
 
 import fb from './assets/fb.png';
@@ -106,7 +107,9 @@ function App() {
         contain: 'content'
       }}>
         <div className='Row-Header'>
-          <h2>From Bro’s to Pro’s </h2>
+          <div className='RowLogo'>
+            <img src={logo} alt=''></img>
+          </div>
           <div className='Row-Buttons'>
             <a className='rowHeader' href="#teachersSection">GAMES</a>
             <a className='rowHeader' href="#teachersSection">TUTORS</a>
@@ -134,11 +137,13 @@ function App() {
             Join our courses and get more competitive advantages straight from our PRO’s. 
           </h4>
 
-          <a href='-'>
+         
           <div className='Landingbutton'  data-aos="fade-up">
-            <p id='button'>JOIN NOW</p>  
+            <a href='-'>
+              <p id='button'>JOIN NOW</p>  
+            </a>
           </div>
-        </a>
+        
 
         </div>
 
@@ -147,7 +152,7 @@ function App() {
         <Carousel
         activeSlideIndex={activeSlideIndex}
         onRequestChange={setActiveSlideIndex}
-        itemsToShow={1}
+        itemsToShow={3}
         itemsToScroll={1}
         forwardBtnProps={{
           //here you can also pass className, or any other button element attributes
@@ -240,11 +245,13 @@ function App() {
            to participate in our tournaments + win prizes every 
            month.
           </h4>
-        <a href='-'>
+        
           <div className='Landingbutton'  data-aos="fade-up">
-            <p id='button'>JOIN NOW</p>  
+            <a href='-'>
+              <p id='button'>JOIN NOW</p>  
+            </a>
           </div>
-        </a>
+        
       </div>
 
       <div className='join-discord'>
@@ -282,21 +289,24 @@ function App() {
 
       <section id="teachersSection"></section>
       <div className='teachers'>
-          <h1 id="tHeader" data-aos="fade-up">TEACHERS</h1>
-          <h6 id="tDesc" data-aos="fade-up">This could be you</h6>
-          <h6 id="tLongDesc">T his could be you his could be you his 
-          could be you his could be you his could be you</h6>
+          <h1 id="tHeader" data-aos="fade-up">TUTORS</h1>
+          <h6 id="tDesc" data-aos="fade-up">This could be you</h6>   
+          <h5 id="tLongDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Iusto, optio, dolorum provident rerum aut hic
+           quasi placeat iure tempora laudantium ipsa ad debitis unde?</h5>
       </div>  
       <div className='teacher-face'>
         <img src={persona} alt="" id="expand"></img>
       </div>
       
       <div className='section-carousel' data-aos="fade-up">
-        <a href='-'>
+        
           <div className='t-button'  data-aos="fade-up">
-            <p id='button'>START</p>  
+            <a href='-'>
+              <p id='button'>START</p>  
+            </a>
           </div>
-        </a>
+        
 
         <Carousel
         activeSlideIndex={activeSlideIndex}
@@ -310,7 +320,7 @@ function App() {
             background: 'black',
             border: 'none',
             borderRadius: '50%',
-            color: 'orange',
+            color: 'white',
             cursor: 'pointer',
             fontSize: '20px',
             height: 30,
@@ -327,7 +337,7 @@ function App() {
             background: 'black',
             border: 'none',
             borderRadius: '50%',
-            color: 'orange',
+            color: 'white',
             cursor: 'pointer',
             fontSize: '20px',
             height: 30,
