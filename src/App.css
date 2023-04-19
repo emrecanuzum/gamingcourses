@@ -406,6 +406,7 @@ width: 5vw;
 }
 /*-------------------------TEACHERS-------------------------*/
 .teachers{
+  background-color: #00000044;
   z-index: 1;
   margin-top: -5vw;
   min-height: 34vw;
@@ -447,7 +448,7 @@ width: 5vw;
   text-align: center;
   margin-top: -6.5vw;
   margin-bottom: 2vw;
-  background-color: #e6aaf5;
+  background-color: #ffffff;
   max-width: 10vw;
   border: 3px solid rgb(0, 0, 0);
   border-radius: 2vw;
