@@ -64,44 +64,48 @@ function App() {
     expandImg.src = personaB
     expandImg.parentElement.style.display = "block";
 
-    var header = document.getElementById("tHeader");
+    /*var header = document.getElementById("tHeader");
     header.innerHTML="Simple";
 
     var desc = document.getElementById("tDesc");
     desc.innerHTML="Best CS:GO Player of all times!"
+    */
   }
   function teacher2() {
     var expandImg = document.getElementById("expand");
     expandImg.src = personaP
     expandImg.parentElement.style.display = "block";
-
+    /*
     var header = document.getElementById("tHeader");
     header.innerHTML="aBeZy";
 
     var desc = document.getElementById("tDesc");
     desc.innerHTML="Best COD Player"
+    */
   }
   function teacher3() {
     var expandImg = document.getElementById("expand");
     expandImg.src = personaR
     expandImg.parentElement.style.display = "block";
-
+    /*
     var header = document.getElementById("tHeader");
     header.innerHTML="JJonak";
 
     var desc = document.getElementById("tDesc");
     desc.innerHTML="Best Overwatch Player"
+    */
   }
   function teacher4() {
     var expandImg = document.getElementById("expand");
     expandImg.src = personaO
     expandImg.parentElement.style.display = "block";
-
+    /*
     var header = document.getElementById("tHeader");
     header.innerHTML="LevideWeerd";
 
     var desc = document.getElementById("tDesc");
     desc.innerHTML="Best FIFA 23 Player"
+    */
   }
 
   return (
@@ -193,7 +197,21 @@ function App() {
         ]}
         speed={400}
         easing="linear">
-
+          <div className='gameimg'>
+            <img id="persona" src={fifa} alt=""></img>
+          </div>
+          <div className='gameimg' >
+            <img id="persona" src={cs} alt=""></img>
+          </div>
+          <div className='gameimg' >
+            <img id="persona" src={lol} alt=""></img>
+          </div>
+          <div className='gameimg' >
+            <img id="persona" src={dota} alt=""></img>
+          </div>
+          <div className='gameimg' >
+            <img id="persona" src={valo} alt=""></img>
+          </div>
           <div className='gameimg' >
             <img id="persona" src={ow} alt=""></img>
           </div>
@@ -203,30 +221,19 @@ function App() {
           <div className='gameimg' >
             <img id="persona" src={rl} alt=""></img>
           </div>
-          <div className='gameimg' >
-            <img id="persona" src={valo} alt=""></img>
-          </div>
+          
           <div className='gameimg' >
             <img id="persona" src={mc} alt=""></img>
           </div>
-          <div className='gameimg'>
-            <img id="persona" src={fifa} alt=""></img>
-          </div>
+          
           <div className='gameimg'>
             <img id="persona" src={cod} alt=""></img>
           </div>
           <div className='gameimg'>
             <img id="persona" src={wow} alt=""></img>
           </div>
-          <div className='gameimg' >
-            <img id="persona" src={lol} alt=""></img>
-          </div>
-          <div className='gameimg' >
-            <img id="persona" src={dota} alt=""></img>
-          </div>
-          <div className='gameimg' >
-            <img id="persona" src={cs} alt=""></img>
-          </div>
+          
+          
           <div className='gameimg' >
             <img id="persona" src={ufc} alt=""></img>
           </div>
