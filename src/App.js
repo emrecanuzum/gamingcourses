@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import React from 'react'
-import StickyBox from "react-sticky-box";
 
 import logo from './assets/logo.png';
 import dcw from './assets/discordW.png';
