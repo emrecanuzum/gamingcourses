@@ -12,7 +12,10 @@ import cs from './assets/cs.jpg';
 import dota from './assets/dota.jpg';
 import ufc from './assets/ufc.jpg';
 import nba from './assets/nba.jpg';
-import bg from './assets/newbg.png';
+import smash from './assets/smash.png';
+import rl from './assets/rl.png';
+import valo from './assets/valo.jpg';
+import mc from './assets/mc.jpg';
 
 import dcIcon from './assets/icons/discord.png';
 import payIcon from './assets/icons/pay.png';
@@ -29,7 +32,6 @@ import personaO from './assets/personaO.png';
 import objRight from './assets/object-right.png';
 import objLeft from './assets/object-left.png';
 
-import discordBackground from './assets/joinBG.png';
 import headerBackground from './assets/1.svg';
 
 import fb from './assets/fb.png';
@@ -55,6 +57,8 @@ function App() {
 
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
+
+  // IN THIS PART YOU ASSIGN TEACHER IMAGES AND TEXTS, AND YOU NEED TO ADD THE ONCLICK FUNCTION TO HTML TUTORS SECTION BOTTOM
   function teacher1() {
     var expandImg = document.getElementById("expand");
     expandImg.src = personaB
@@ -114,17 +118,9 @@ function App() {
             <a className='rowHeader' href="#teachersSection">GAMES</a>
             <a className='rowHeader' href="#teachersSection">TUTORS</a>
             <a className='rowHeader' href="#missionSection">MISSION</a>
-            <a className='rowHeader' href="#roadmap">ROADMAP</a>
+
           </div>
-          <div className='Row-Discord'>
-            <div className='hover'>
-              <a className="dcHeader" href='-'>
-                <figure>
-                  <img src={dcw} alt=""></img>    
-                </figure>       
-              </a>
-            </div>
-          </div>
+          
         </div>
 
 
@@ -140,7 +136,7 @@ function App() {
          
           <div className='Landingbutton'  data-aos="fade-up">
             <a href='-'>
-              <p id='button'>JOIN NOW</p>  
+              <p id='button'>JOIN OUR DISCORD</p>  
             </a>
           </div>
         
@@ -152,7 +148,7 @@ function App() {
         <Carousel
         activeSlideIndex={activeSlideIndex}
         onRequestChange={setActiveSlideIndex}
-        itemsToShow={5}
+        itemsToShow={3}
         itemsToScroll={1}
         forwardBtnProps={{
           //here you can also pass className, or any other button element attributes
@@ -201,6 +197,18 @@ function App() {
           <div className='gameimg' >
             <img id="persona" src={ow} alt=""></img>
           </div>
+          <div className='gameimg' >
+            <img id="persona" src={smash} alt=""></img>
+          </div>
+          <div className='gameimg' >
+            <img id="persona" src={rl} alt=""></img>
+          </div>
+          <div className='gameimg' >
+            <img id="persona" src={valo} alt=""></img>
+          </div>
+          <div className='gameimg' >
+            <img id="persona" src={mc} alt=""></img>
+          </div>
           <div className='gameimg'>
             <img id="persona" src={fifa} alt=""></img>
           </div>
@@ -234,7 +242,7 @@ function App() {
       
 
       <div className='join-community'>
-        <img src={discordBackground} alt=''></img>
+
         <h3 class="roadmap-title" data-aos="fade-up">
             JOIN OUR COMMUNITY
         </h3>
@@ -290,10 +298,12 @@ function App() {
       <section id="teachersSection"></section>
       <div className='teachers'>
           <h1 id="tHeader" data-aos="fade-up">OUR TUTORS</h1>
-          <h6 id="tDesc" data-aos="fade-up">This could be you</h6>   
+          <h6 id="tDesc" data-aos="fade-up">This could be you</h6>  
+          {/*
           <h5 id="tLongDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Iusto, optio, dolorum provident rerum aut hic
            quasi placeat iure tempora laudantium ipsa ad debitis unde?</h5>
+          */}   
       </div>  
       <div className='teacher-face'>
         <img src={persona} alt="" id="expand"></img>
@@ -388,12 +398,14 @@ function App() {
           <img src={objRight} alt=""></img>
         </div> 
       </div>
-      
+   
+{/*
+
       <section id="roadmap">
         <h3 class="roadmap-title">
             ROADMAP
         </h3>
-        
+       
       </section>
       
       <section id="cd-timeline" class="cd-container">
@@ -443,9 +455,14 @@ function App() {
 
 		
 	</section> 
+
+*/}
+
       <div className='footer'>
         <div className='footer-text'>
-          <h6>Follow us on social media.</h6>
+          <h6>GamingCourses is not affiliated with any games or game companies. Use of
+any third-party trademarks and content is for reference only. All trademarks and copyrights are
+property of their respective owners </h6>
         </div>
         <div className='icons'>
           <div className='hover'>
@@ -463,7 +480,7 @@ function App() {
             </a>
           </div>
           <div className='hover'>
-            <a href='-'>
+            <a href='https://www.instagram.com/gamingcourses.gg/'>
               <figure>
                 <img src={ins} alt=""></img>
               </figure>
