@@ -310,6 +310,9 @@ function App() {
       </div>
 
       <section id="teachersSection"></section>
+      <div className='teachers-bg'>
+
+      
       <div className='teachers'>
           <h1 id="tHeader" data-aos="fade-up">OUR TUTORS</h1>
           <h6 id="tDesc" data-aos="fade-up">This could be you</h6>  
@@ -396,6 +399,7 @@ function App() {
 
         </Carousel>  
       </div>
+      </div>
       
       <section id="missionSection"></section>
       <div className='mission'>
@@ -412,7 +416,7 @@ function App() {
           <img src={objRight} alt=""></img>
         </div> 
       </div>
-   
+      
 {/*
 
       <section id="roadmap">
