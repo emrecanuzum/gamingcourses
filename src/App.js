@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import React from 'react'
+import StickyBox from "react-sticky-box";
 
 import logo from './assets/logo.png';
 import dcw from './assets/discordW.png';
@@ -109,42 +110,43 @@ function App() {
   }
 
   return (
+    
     <div className="App"   style={{ backgroundImage:`url(${headerBackground})`}}>
+
+       <div className='Row-Header'>
+         <div className='RowLogo'>
+           <img src={logo} alt=''></img>
+         </div>
+         <div className='Row-Buttons'>
+           <a className='rowHeader' href="#teachersSection">GAMES</a>
+           <a className='rowHeader' href="#teachersSection">TUTORS</a>
+           <a className='rowHeader' href="#missionSection">MISSION</a>
+         </div>
+         <div className='Row-Discord'>
+           <div className='hover'>
+             <a className="dcHeader" href='-'>
+               <figure>
+                 <img src={dcw} alt=""></img>    
+               </figure>       
+             </a>
+           </div>
+         </div>
+       </div>      
+
+  
+      <div className='bottomHeader'>
       <div className='videoBg'
       style={{
         contain: 'content'
       }}>
-        <div className='Row-Header'>
-          <div className='RowLogo'>
-            <img src={logo} alt=''></img>
-          </div>
-          <div className='Row-Buttons'>
-            <a className='rowHeader' href="#teachersSection">GAMES</a>
-            <a className='rowHeader' href="#teachersSection">TUTORS</a>
-            <a className='rowHeader' href="#missionSection">MISSION</a>
-          </div>
-          <div className='Row-Discord'>
-            <div className='hover'>
-              <a className="dcHeader" href='-'>
-                <figure>
-                  <img src={dcw} alt=""></img>    
-                </figure>       
-              </a>
-            </div>
-          </div>
-        </div>
-
-
         <div className='Banner'  style={{  }}>
-
           <h1>Master your in-game skills </h1>
           <h2>Rule the online world</h2>
           <h4>Annoying friend keeps running over you in online matchup? 
             Level up your game. 
             Join our courses and get more competitive advantages straight from our PRO’s. 
           </h4>
-
-         
+   
           <div className='Landingbutton'  data-aos="fade-up">
             <a href='-'>
               <p id='button'>JOIN OUR DISCORD</p>  
@@ -239,8 +241,6 @@ function App() {
           <div className='gameimg'>
             <img id="persona" src={wow} alt=""></img>
           </div>
-          
-          
           <div className='gameimg' >
             <img id="persona" src={ufc} alt=""></img>
           </div>
@@ -252,9 +252,6 @@ function App() {
         
         </div>
       </div>
-
-      
-
       <div className='join-community'>
 
         <h3 class="roadmap-title" data-aos="fade-up">
@@ -400,7 +397,7 @@ function App() {
         </Carousel>  
       </div>
       </div>
-      
+
       <section id="missionSection"></section>
       <div className='mission'>
         <div className='mission-header' data-aos="fade-up">
@@ -514,6 +511,8 @@ property of their respective owners </h6>
         </div>
       </div>
     </div>
+      </div>
+     
   );
 }
 

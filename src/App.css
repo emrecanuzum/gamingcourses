@@ -1,16 +1,15 @@
 html {
   scroll-behavior: smooth;
-  z-index: -2;
   font-family: 'Chakra Petch', sans-serif;
 }
 body{
-  z-index: -2;
+  z-index: -1;
   background-color: #4729a4;
   font-family: 'Chakra Petch', sans-serif;
 }
 
 .App {
-  z-index: -2;
+  overflow: clip;
   position: absolute;
   text-align: center;
   background-color: #4729a4;
@@ -24,7 +23,10 @@ body{
 }
 
 .Row-Header{
-  background-color: rgba(0, 0, 0, 0.507);
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.616);
   text-align: center;
   min-height: 11vh;
   margin-bottom: 0vw;
@@ -183,18 +185,15 @@ width: 5vw;
   margin-top: -7.5vw;
   margin-bottom: 5vw;
   background-color: #ffffff;
-  max-width: 10vw;
+  width: 13vw;
   border: 3px solid rgb(0, 0, 0);
-  border-radius: 2vw;
+  border-radius: 1vw;
 }
 .Landingbutton:hover, .Landingbutton p:hover{
-  background-color: rgb(0, 0, 0);
-  text-shadow: 0px 0px 2vw rgb(255, 255, 255);
-  color: white;
+  background-color: rgb(182, 182, 182);
 }
 
 .Landingbutton p{
-  text-shadow: 0px 0px 2vw rgb(0, 0, 0);
   font-size: 1vw;
   color: black;
   font-weight: 700;
@@ -409,7 +408,7 @@ width: 5vw;
     background-color: #00000044;
 }
 .teachers{
-  z-index: 2;
+  z-index: 1;
   margin-top: -5vw;
   min-height: 34vw;
   background-size: cover;
@@ -444,16 +443,21 @@ width: 5vw;
   width: 10vw;
 }
 
+.t-button:hover, .t-button p:hover{
+  background-color: rgb(146, 146, 146);
+}
+
 .t-button{
-  z-index: 2;
+  position: relative;
+  z-index: 3;
   box-shadow: 0px 0px 3vw rgb(0, 0, 0);
   text-align: center;
-  margin-top: -6.5vw;
+  margin-top: -3.5vw;
   margin-bottom: 2vw;
   background-color: #ffffff;
-  max-width: 10vw;
+  width: 12vw;
   border: 3px solid rgb(0, 0, 0);
-  border-radius: 2vw;
+  border-radius: 1vw;
 }
 .t-button p{
   font-size: 1vw;
@@ -463,16 +467,16 @@ width: 5vw;
 }
 
 .teacher-face{
-  z-index: -1;
+  z-index: 0;
   position: relative;
   margin-top: -25vw;
-  padding-bottom: 10vw;
+  margin-bottom: 10vw;
 }
 
 .section-carousel{
-  z-index: 2;
+  z-index: 1;
   padding-top: 0vw;
-  margin-top: -11.3vw;
+  margin-top: -14vw;
   padding-bottom: 3vw;
   text-align: -webkit-center;
 }
