@@ -122,9 +122,16 @@ function App() {
             <a className='rowHeader' href="#teachersSection">GAMES</a>
             <a className='rowHeader' href="#teachersSection">TUTORS</a>
             <a className='rowHeader' href="#missionSection">MISSION</a>
-
           </div>
-          
+          <div className='Row-Discord'>
+            <div className='hover'>
+              <a className="dcHeader" href='-'>
+                <figure>
+                  <img src={dcw} alt=""></img>    
+                </figure>       
+              </a>
+            </div>
+          </div>
         </div>
 
 
