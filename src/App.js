@@ -7,7 +7,7 @@ import fifa from './assets/fifa.png';
 import cod from './assets/cod.png';
 import ow from './assets/ow.png';
 import wow from './assets/wow.png';
-import lol from './assets/lol.jpeg';
+import lol from './assets/lol.png';
 import cs from './assets/cs.jpg';
 import dota from './assets/dota.jpg';
 import ufc from './assets/ufc.jpg';
@@ -101,7 +101,7 @@ function App() {
   }
 
   return (
-    <div className="App"   style={{ backgroundImage:`url(${bg})` }}>
+    <div className="App"   style={{ backgroundImage:`url(${headerBackground})`}}>
       <div className='videoBg'
       style={{
         contain: 'content'
@@ -128,7 +128,7 @@ function App() {
         </div>
 
 
-        <div className='Banner'  style={{ backgroundImage:`url(${headerBackground})` }}>
+        <div className='Banner'  style={{  }}>
 
           <h1>Master your in-game skills </h1>
           <h2>Rule the online world</h2>
@@ -152,7 +152,7 @@ function App() {
         <Carousel
         activeSlideIndex={activeSlideIndex}
         onRequestChange={setActiveSlideIndex}
-        itemsToShow={3}
+        itemsToShow={5}
         itemsToScroll={1}
         forwardBtnProps={{
           //here you can also pass className, or any other button element attributes
@@ -190,7 +190,7 @@ function App() {
         }}
         responsiveProps={[
           {
-            itemsToShow: 3,
+            itemsToShow: 5,
             itemsToScroll: 1,
             minWidth: 400,
           }
@@ -289,7 +289,7 @@ function App() {
 
       <section id="teachersSection"></section>
       <div className='teachers'>
-          <h1 id="tHeader" data-aos="fade-up">TUTORS</h1>
+          <h1 id="tHeader" data-aos="fade-up">OUR TUTORS</h1>
           <h6 id="tDesc" data-aos="fade-up">This could be you</h6>   
           <h5 id="tLongDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Iusto, optio, dolorum provident rerum aut hic
