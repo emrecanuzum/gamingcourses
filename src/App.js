@@ -117,7 +117,7 @@ function App() {
            <img src={logo} alt=''></img>
          </div>
          <div className='Row-Buttons'>
-           <a className='rowHeader' href="#teachersSection">GAMES</a>
+           <a className='rowHeader' href="#gamesSection">GAMES</a>
            <a className='rowHeader' href="#teachersSection">TUTORS</a>
            <a className='rowHeader' href="#missionSection">MISSION</a>
          </div>
@@ -145,16 +145,15 @@ function App() {
             Level up your game. 
             Join our courses and get more competitive advantages straight from our PRO’s. 
           </h4>
-   
-          <div className='Landingbutton'  data-aos="fade-up">
-            <a href='-'>
-              <p id='button'>JOIN OUR DISCORD</p>  
-            </a>
-          </div>
-        
+
+          <a href='-'>
+            <div className='Landingbutton'  data-aos="fade-up">            
+                <p id='button'>JOIN OUR DISCORD</p>  
+            </div>
+          </a>
 
         </div>
-
+        <section id='gamesSection'></section>
         <div className="Landing-Bottom">
           
         <Carousel
@@ -263,13 +262,13 @@ function App() {
            to participate in our tournaments + win prizes every 
            month.
           </h4>
-        
-          <div className='Landingbutton'  data-aos="fade-up">
-            <a href='-'>
-              <p id='button'>JOIN NOW</p>  
-            </a>
-          </div>
-        
+
+          <a href='-'>
+            <div className='Landingbutton'  data-aos="fade-up">
+              <p id='button'>JOIN NOW</p>         
+            </div>
+          </a>
+
       </div>
 
       <div className='join-discord'>
@@ -323,13 +322,11 @@ function App() {
       </div>
       
       <div className='section-carousel' data-aos="fade-up">
-        
+        <a href='-'>
           <div className='t-button'  data-aos="fade-up">
-            <a href='-'>
-              <p id='button'>START</p>  
-            </a>
+              <p id='button'>START</p>          
           </div>
-        
+        </a>
 
         <Carousel
         activeSlideIndex={activeSlideIndex}
