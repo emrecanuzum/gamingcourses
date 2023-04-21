@@ -41,7 +41,7 @@ body{
   left: 10vw;
 }
 .RowLogo img{
-width: 5vw;
+height: 4vw;
 }
 .Row-Header h2{
   position: fixed;
@@ -61,7 +61,7 @@ width: 5vw;
 .rowHeader{
   text-decoration: none;
   position: static;
-  color: #ff8b3d;
+  color: #ffe23d;
   font-size: 1.5vw;
   margin-left: 3vw;
 
@@ -111,7 +111,7 @@ width: 5vw;
   .rowHeader{
     text-decoration: none;
     position: static;
-    color:  #ff8b3d;
+    color:  #ffe23d;
     font-size: 2vw;
     margin-left: 3vw;
   }
@@ -158,7 +158,7 @@ width: 5vw;
 }
 .Banner h1{
   padding-top: 15vw;
-  color: #ff8b3d;
+  color: #ffe23d;
   font-size: 5vw;
 
 }
@@ -329,6 +329,20 @@ width: 5vw;
   position: relative;
   font-size: 1.4vw;
 }
+.dcGrid h3{
+  color: white;
+  text-shadow: 0px 0px 1vw rgb(0, 0, 0);
+  margin-top: -2vw;
+  padding-bottom: 1vw;
+  font-size: 1.5vw;
+
+}
+#arrowIcon{
+  margin-top: 3vw;
+  height: 2vw;
+  width: 2vw;
+  padding: 0;
+}
 .dcImg{
   align-items: center;
   contain: content;
@@ -424,6 +438,7 @@ width: 5vw;
 }
 
 .teachers h6{
+  text-shadow: 0px 0px 3vw rgb(0, 0, 0);
   margin-left: 5.1vw;
   color: white;
   font-size: 1.25vw;
@@ -431,7 +446,8 @@ width: 5vw;
 }
 
 .teachers h5{
-  max-width: 38vw;
+  text-shadow: 0px 0px 3vw rgb(0, 0, 0);
+  max-width: 30vw;
   margin-left: 5.1vw;
   color: white;
   font-size: 1.25vw;
@@ -737,6 +753,12 @@ margin-bottom: 1vw;
   margin-left: -3vw;
   margin-right: -3vw;
   width: 3vw;
+}
+
+.footer h4{
+  color: white;
+  margin-bottom: 0;
+  padding: 5px;
 }
 
 @media (max-width:480px){

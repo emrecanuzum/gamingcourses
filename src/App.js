@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import React from 'react'
 
-import logo from './assets/logo.png';
+import logo from './assets/logo1.png';
 import dcw from './assets/discordW.png';
 import fifa from './assets/fifa.png';
 import cod from './assets/cod.png';
@@ -17,12 +17,13 @@ import rl from './assets/rl.png';
 import valo from './assets/valo.jpg';
 import mc from './assets/mc.jpg';
 
+import arrow from './assets/arrow.png';
 import dcIcon from './assets/icons/discord.png';
 import payIcon from './assets/icons/pay.png';
 import formIcon from './assets/icons/form.png';
 import taskIcon from './assets/icons/tasks.png';
 
-import persona from './assets/persona.png';
+import persona from './assets/personaw.png';
 import personaB from './assets/personaB.png';
 import personaP from './assets/personaP.png';
 import personaR from './assets/personaR.png';
@@ -59,6 +60,18 @@ function App() {
 
 
   // IN THIS PART YOU ASSIGN TEACHER IMAGES AND TEXTS, AND YOU NEED TO ADD THE ONCLICK FUNCTION TO HTML TUTORS SECTION BOTTOM
+  function teacher0() {
+    var expandImg = document.getElementById("expand");
+    expandImg.src = persona
+    expandImg.parentElement.style.display = "block";
+
+    /*var header = document.getElementById("tHeader");
+    header.innerHTML="Simple";
+
+    var desc = document.getElementById("tDesc");
+    desc.innerHTML="Best CS:GO Player of all times!"
+    */
+  }
   function teacher1() {
     var expandImg = document.getElementById("expand");
     expandImg.src = personaB
@@ -280,25 +293,38 @@ function App() {
               <div className='dcImg'>
                 <img src={dcIcon} alt=''></img>
               </div>
+           
               <h4>JOIN</h4>
+              <h3>1</h3>
             </dc>
+
+            <img id='arrowIcon' src={arrow} alt=''></img>
+
             <dc className='dcGrid'>
               <div className='dcImg'>
                 <img src={formIcon} alt=''></img>
               </div>
+              
               <h4>REGISTER</h4>
+              <h3>2</h3>
             </dc>
+            <img id='arrowIcon' src={arrow} alt=''></img>
             <dc className='dcGrid'>
               <div className='dcImg'>
                 <img src={taskIcon} alt=''></img>
               </div>
+              
               <h4>COMPLETE</h4>
+              <h3>4</h3>
             </dc>
+            <img id='arrowIcon' src={arrow} alt=''></img>
             <dc className='dcGrid'>
               <div className='dcImg'>
                 <img src={payIcon} alt=''></img>
               </div>
+              
               <h4>GO PRO</h4>
+              <h3>4</h3>
             </dc>
           </div>
         </div>
@@ -311,11 +337,11 @@ function App() {
       <div className='teachers'>
           <h1 id="tHeader" data-aos="fade-up">OUR TUTORS</h1>
           <h6 id="tDesc" data-aos="fade-up">This could be you</h6>  
-          {/*
-          <h5 id="tLongDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Iusto, optio, dolorum provident rerum aut hic
-           quasi placeat iure tempora laudantium ipsa ad debitis unde?</h5>
-          */}   
+          
+          <h5 id="tLongDesc">Our PRO’s are waiting for you. Learn from the most experienced, 
+          skilled, well known and charismatic personas from all around the globe. 
+          Choose your favorite tutor, complete the courses and become a PRO.</h5>
+          {/**/}   
       </div>  
       <div className='teacher-face'>
         <img src={persona} alt="" id="expand"></img>
@@ -376,7 +402,9 @@ function App() {
         ]}
         speed={400}
         easing="linear">
-
+          <div className='person' >
+            <img id="persona" src={persona} alt="" onClick={teacher0}></img>
+          </div>
           <div className='person' >
             <img id="persona" src={personaB} alt="" onClick={teacher1}></img>
           </div>
@@ -475,6 +503,9 @@ function App() {
 any third-party trademarks and content is for reference only. All trademarks and copyrights are
 property of their respective owners </h6>
         </div>
+        <br></br>
+        <hr></hr>
+        <br></br>
         <div className='icons'>
           <div className='hover'>
             <a href='-'>
@@ -504,7 +535,12 @@ property of their respective owners </h6>
               </figure>
             </a>
           </div>
+
         </div>
+        <h4 id='copy'>© 2023 GamingCourses.gg | All rights deserved.</h4>
+      </div>
+      <div className='bottomFooter'>
+
       </div>
     </div>
       </div>
