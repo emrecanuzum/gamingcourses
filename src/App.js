@@ -315,7 +315,7 @@ function App() {
               </div>
               
               <h4>COMPLETE</h4>
-              <h3>4</h3>
+              <h3>3</h3>
             </dc>
             <img id='arrowIcon' src={arrow} alt=''></img>
             <dc className='dcGrid'>
@@ -503,9 +503,9 @@ function App() {
 any third-party trademarks and content is for reference only. All trademarks and copyrights are
 property of their respective owners </h6>
         </div>
-        <br></br>
+
         <hr></hr>
-        <br></br>
+
         <div className='icons'>
           <div className='hover'>
             <a href='-'>
