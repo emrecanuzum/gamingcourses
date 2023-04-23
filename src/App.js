@@ -172,7 +172,7 @@ function App() {
         <Carousel
         activeSlideIndex={activeSlideIndex}
         onRequestChange={setActiveSlideIndex}
-        itemsToShow={3}
+        itemsToShow={4}
         itemsToScroll={1}
         forwardBtnProps={{
           //here you can also pass className, or any other button element attributes
