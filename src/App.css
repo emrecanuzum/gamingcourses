@@ -91,7 +91,7 @@ height: 4vw;
   .Row-Header{
     background-color: rgba(0, 0, 0, 0.507);
     text-align: center;
-    min-height: 5vh;
+    min-height: 5.5vh;
     margin-bottom: -2vw;
     contain: content;
     display: flex;
@@ -115,19 +115,19 @@ height: 4vw;
   }
   .Row-Buttons{
     display: flex;
-    margin-top: .6vh;
-    margin-left: 4vh;
+    margin-top: .8vh;
+    margin-left: 5vh;
     text-decoration: none;
   }
   .rowHeader{
     text-decoration: none;
     position: static;
     color:  #ffe23d;
-    font-size: 1.3vh;
-    margin-left: 3vw;
+    font-size: 1.4vh;
+    margin-left: 3.5vw;
   }
   .Row-Discord img{
-    padding: 0vw;
+    padding-bottom: 0.5vw;
     position: relative;
     width: 4vw;
     height: auto;
