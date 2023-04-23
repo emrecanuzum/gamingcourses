@@ -391,6 +391,12 @@ height: 4vw;
   width: 7.0vw;
   height: 7.0vw;
 }
+.dcRow{
+  margin-top: 4vw;
+  margin-left: -3vw;
+  display: flex;
+  min-height: max-content;
+}
 .join-discord h1{
   text-shadow: 0px 0px 3vw rgb(0, 0, 0);
   color: white;
