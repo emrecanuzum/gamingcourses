@@ -172,7 +172,7 @@ function App() {
         <Carousel
         activeSlideIndex={activeSlideIndex}
         onRequestChange={setActiveSlideIndex}
-        itemsToShow={4}
+        itemsToShow={3}
         itemsToScroll={1}
         forwardBtnProps={{
           //here you can also pass className, or any other button element attributes
@@ -212,7 +212,7 @@ function App() {
           {
             itemsToShow: 5,
             itemsToScroll: 1,
-            minWidth: 400,
+            minWidth: 650,
           }
         ]}
         speed={400}
@@ -432,14 +432,13 @@ function App() {
           <div className='mission-box' data-aos="fade-up">
               <h6>
               Connect esports gaming PRO's with BRO's, provide valuable video lessons material to our subscribers while keeping our competitive esports gaming community happy and updated.
-                </h6>
+              </h6>
           </div>
           <img src={objRight} alt=""></img>
         </div> 
       </div>
       
 {/*
-
       <section id="roadmap">
         <h3 class="roadmap-title">
             ROADMAP

@@ -686,7 +686,9 @@ figure{
   margin-left: 1.5vw;
   margin-right: 1.5vw;
 }
-
+.mission-context img{
+  visibility: visible;
+}
 .mission-box{
   box-shadow: 0px 0px 3vw rgb(0, 0, 0);
   display: flex;
@@ -702,12 +704,16 @@ figure{
   contain: content;
   border: 2px solid rgb(247,117,61);
   border-radius: 1vw;
-  width: 33.0vw;
+  width: 50.0vw;
   min-height: 10vw;
   height: auto;
   
 }
-
+@media (max-width:680px){
+  .mission-context img{
+    visibility: hidden;
+  }
+}
 @media (max-width:480px){
   .mission-header h2{
   text-shadow: 0px 0px 3vw rgb(0, 0, 0);
