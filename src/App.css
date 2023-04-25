@@ -728,7 +728,7 @@ figure{
     contain: content;
     border: 2px solid rgb(247,117,61);
     border-radius: 1vw;
-    width: 100.0vw;
+    width: 100%;
     min-height: 10vw;
     height: auto;
     
