@@ -428,13 +428,17 @@ function App() {
           <h2>MISSION</h2>
         </div>
         <div className='mission-context' data-aos="fade-up">
+          {/*
           <img src={objLeft} alt=""></img>
+        */}
           <div className='mission-box' data-aos="fade-up">
               <h6>
               Connect esports gaming PRO's with BRO's, provide valuable video lessons material to our subscribers while keeping our competitive esports gaming community happy and updated.
               </h6>
           </div>
+          {/* 
           <img src={objRight} alt=""></img>
+          */}
         </div> 
       </div>
       
