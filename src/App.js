@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import React from 'react'
 
-import logo from './assets/logo1.png';
+import logo from './assets/logoHorizontal.png';
 import dcw from './assets/discordW.png';
 import fifa from './assets/fifa.png';
 import cod from './assets/cod.png';
@@ -136,7 +136,7 @@ function App() {
          </div>
          <div className='Row-Discord'>
            <div className='hover'>
-             <a className="dcHeader" href='-'>
+             <a className="dcHeader" href='https://discord.com/invite/xhApnPhR'>
                <figure>
                  <img src={dcw} alt=""></img>    
                </figure>       
@@ -159,7 +159,7 @@ function App() {
             Join our courses and get more competitive advantages straight from our PRO’s. 
           </h4>
 
-          <a href='-'>
+          <a href='https://discord.com/invite/xhApnPhR'>
             <div className='Landingbutton'  data-aos="fade-up">            
                 <p id='button'>JOIN OUR DISCORD</p>  
             </div>
@@ -276,7 +276,7 @@ function App() {
            month.
           </h4>
 
-          <a href='-'>
+          <a href='https://discord.com/invite/xhApnPhR'>
             <div className='Landingbutton'  data-aos="fade-up">
               <p id='button'>JOIN NOW</p>         
             </div>
@@ -348,7 +348,7 @@ function App() {
       </div>
       
       <div className='section-carousel' data-aos="fade-up">
-        <a href='-'>
+        <a href='https://discord.com/invite/xhApnPhR'>
           <div className='t-button'  data-aos="fade-up">
               <p id='button'>START</p>          
           </div>
